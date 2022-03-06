@@ -21,6 +21,20 @@ body{
     font-family: Poppins;
     padding-bottom:5rem ;
 }
+#help{
+    // border: 1px solid wheat;
+    // text-align: right;
+    float: right;
+    width: fit-content;
+    margin: 0 1rem  0 0;
+    color: grey;
+}
+#searchText{
+    border-radius: 1rem;
+    border-width: 0;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
 #search{
     display: flex;
     // background-color: hsla(0, 0%, 93%,1);
@@ -73,10 +87,6 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 100;
-    // opacity: 0.4;
-    // &:hover{
-    //     opacity: 1;
-    // }
     #showing{
         display: flex;
         justify-content: center;
@@ -211,5 +221,22 @@ body{
         border-radius: 0.3rem;
         margin: 1rem;
         // text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    // #arch{
+    //     top: 50%;
+    //     left: auto;
+    //     right: 0;
+    //     bottom: auto;
+    // }
+    // .dropup-content{
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    // }
+    #searchText{
+        width: 7rem;
     }
 }

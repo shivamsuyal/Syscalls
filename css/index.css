@@ -20,6 +20,22 @@ body {
   padding-bottom: 5rem;
 }
 
+#help {
+  float: right;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 1rem  0 0;
+  color: grey;
+}
+
+#searchText {
+  border-radius: 1rem;
+  border-width: 0;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
 #search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,5 +227,11 @@ body {
   border: 1px solid white;
   border-radius: 0.3rem;
   margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #searchText {
+    width: 7rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
