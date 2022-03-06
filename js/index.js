@@ -58,6 +58,21 @@ archs.forEach((ele)=>{
         <p>${syscallArgs[name][5]}</p>`
 
         head.innerHTML=d2
+
+        // let data; // contain syscalls (json) 
+        content2.innerHTML=""
+        readJson(`assets/syscall${name}.json`, function(text){
+            data = JSON.parse(text);
+            data.forEach(ele => {
+                d1='<div class="call">'
+                for (i in ele){
+                    // console.log(i)
+                    d1+=`<p>${ele[i]}</p>`
+                }
+                d1+="</div>"
+                content2.insertAdjacentHTML('beforeend',d1)
+            });
+        });
     })
 });
 
@@ -73,20 +88,15 @@ search.addEventListener("mouseleave", (event)=>{
 
 
 let data; // contain syscalls (json) 
-readJson("assets/syscall.json", function(text){
-    // return
+readJson("assets/syscallx64.json", function(text){
     data = JSON.parse(text);
+    content2.innerHTML=""
     data.forEach(ele => {
-        d1 = `<div class="call">
-        <p>${ele["System call"]}</p>
-        <p>${ele["rax"]}</p>
-        <p>${ele["rdi"]}</p>
-        <p>${ele["rsi"]}</p>
-        <p>${ele["rdx"]}</p>
-        <p>${ele["r10"]}</p>
-        <p>${ele["r8"]}</p>
-        <p>${ele["r9"]}</p>
-    </div>`
+        d1='<div class="call">'
+        for (i in ele){
+            d1+=`<p>${ele[i]}</p>`
+        }
+        d1+="</div>"
         content2.insertAdjacentHTML('beforeend',d1)
     });
 });
@@ -110,7 +120,11 @@ function TextChange(val){
     
     data.forEach(ele => {
         if(ele["System call"].includes(val)){
-            d1 = `<div class="call"><p>${ele["System call"]}</p><p>${ele["rax"]}</p><p>${ele["rdi"]}</p><p>${ele["rsi"]}</p><p>${ele["rdx"]}</p><p>${ele["r10"]}</p><p>${ele["r8"]}</p><p>${ele["r9"]}</p></div>`
+            d1='<div class="call">'
+            for (i in ele){
+                d1+=`<p>${ele[i]}</p>`
+            }
+            d1+="</div>"
             content1.insertAdjacentHTML('beforeend',d1)
         }
     });

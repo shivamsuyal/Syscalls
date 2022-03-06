@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400&family=Hubballi&family=Poppins&display=swap");
 :root {
   --wwidth: calc(100vw/9);
-  --bgColor: rgba(0, 164, 206, 1)
-;
+  --bgColor: #023047;
+  --colorHead: #219ebc;
+  --boxColor2: #ffd60a;
+  --boxColor2_dark: #ffc300;
+  --boxColor2_search: #b5e48c;
 }
 
 html, body {
@@ -12,7 +16,8 @@ html, body {
 body {
   background-color: var(--bgColor);
   color: #eee;
-  height: 5000px;
+  font-family: Poppins;
+  padding-bottom: 5rem;
 }
 
 #search {
@@ -114,8 +119,8 @@ body {
 #arch .dropup-content {
   display: none;
   background-color: #f1f1f1;
-  height: 300px;
-  overflow-y: scroll;
+  max-height: 300px;
+  overflow-y: auto;
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -138,8 +143,9 @@ body {
   padding: 0;
 }
 
-#syscalls #content1 {
-  background-color: darkkhaki;
+#syscalls #content1 .call p {
+  color: var(--boxColor2_search);
+  border-color: var(--boxColor2_search);
 }
 
 #syscalls .head {
@@ -156,12 +162,14 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
+  font-family: 'Fredoka', sans-serif;
 }
 
 #syscalls .head p {
   overflow-wrap: break-word;
   text-align: center;
-  background-color: #75afe2;
+  background-color: var(--colorHead);
+  border-radius: 0.2rem;
   padding: 1rem 0;
 }
 
@@ -177,13 +185,31 @@ body {
 }
 
 #syscalls .call p {
-  background-color: #86b8e6;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-color: var(--boxColor2);
+  color: var(--boxColor2);
   overflow-wrap: break-word;
   text-align: center;
   padding: 1rem 0;
 }
 
 #syscalls .call p:hover {
-  background-color: #5fa4e4;
+  border: 0;
+  background-color: #013a63;
+  border-radius: 0.2rem;
+  color: var(--boxColor2_dark);
+}
+
+#def #architecture {
+  font-family: 'Hubballi', cursive;
+  font-size: 1.3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1rem;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  margin: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

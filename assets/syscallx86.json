@@ -1,0 +1,3852 @@
+[
+    {
+        "System call": "restart_syscall",
+        "eax": "0",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "exit",
+        "eax": "1",
+        "ebx": "int error_code",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fork",
+        "eax": "2",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "read",
+        "eax": "3",
+        "ebx": "unsigned int fd",
+        "ecx": "char *buf",
+        "edx": "size_t count",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "write",
+        "eax": "4",
+        "ebx": "unsigned int fd",
+        "ecx": "const char *buf",
+        "edx": "size_t count",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "open",
+        "eax": "5",
+        "ebx": "const char *filename",
+        "ecx": "int flags",
+        "edx": "umode_t mode",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "close",
+        "eax": "6",
+        "ebx": "unsigned int fd",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "waitpid",
+        "eax": "7",
+        "ebx": "pid_t pid",
+        "ecx": "int *stat_addr",
+        "edx": "int options",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "creat",
+        "eax": "8",
+        "ebx": "const char *pathname",
+        "ecx": "umode_t mode",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "link",
+        "eax": "9",
+        "ebx": "const char *oldname",
+        "ecx": "const char *newname",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "unlink",
+        "eax": "10",
+        "ebx": "const char *pathname",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "execve",
+        "eax": "11",
+        "ebx": "const char *filename",
+        "ecx": "const char *const *argv",
+        "edx": "const char *const *envp",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "chdir",
+        "eax": "12",
+        "ebx": "const char *filename",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "time",
+        "eax": "13",
+        "ebx": "time_t *tloc",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mknod",
+        "eax": "14",
+        "ebx": "const char *filename",
+        "ecx": "umode_t mode",
+        "edx": "unsigned dev",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "chmod",
+        "eax": "15",
+        "ebx": "const char *filename",
+        "ecx": "umode_t mode",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "lchown",
+        "eax": "16",
+        "ebx": "const char *filename",
+        "ecx": "uid_t user",
+        "edx": "gid_t group",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "break",
+        "eax": "17",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "oldstat",
+        "eax": "18",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "lseek",
+        "eax": "19",
+        "ebx": "unsigned int fd",
+        "ecx": "off_t offset",
+        "edx": "unsigned int whence",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getpid",
+        "eax": "20",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mount",
+        "eax": "21",
+        "ebx": "char *dev_name",
+        "ecx": "char *dir_name",
+        "edx": "char *type",
+        "esi": "unsigned long flags",
+        "edi": "void *data",
+        "ebp": ""
+    },
+    {
+        "System call": "umount",
+        "eax": "22",
+        "ebx": "char *name",
+        "ecx": "int flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setuid",
+        "eax": "23",
+        "ebx": "uid_t uid",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getuid",
+        "eax": "24",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "stime",
+        "eax": "25",
+        "ebx": "time_t *tptr",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ptrace",
+        "eax": "26",
+        "ebx": "long request",
+        "ecx": "long pid",
+        "edx": "unsigned long addr",
+        "esi": "unsigned long data",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "alarm",
+        "eax": "27",
+        "ebx": "unsigned int seconds",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "oldfstat",
+        "eax": "28",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "pause",
+        "eax": "29",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "utime",
+        "eax": "30",
+        "ebx": "char *filename",
+        "ecx": "struct utimbuf *times",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "stty",
+        "eax": "31",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "gtty",
+        "eax": "32",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "access",
+        "eax": "33",
+        "ebx": "const char *filename",
+        "ecx": "int mode",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "nice",
+        "eax": "34",
+        "ebx": "int increment",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ftime",
+        "eax": "35",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "sync",
+        "eax": "36",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "kill",
+        "eax": "37",
+        "ebx": "pid_t pid",
+        "ecx": "int sig",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "rename",
+        "eax": "38",
+        "ebx": "const char *oldname",
+        "ecx": "const char *newname",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mkdir",
+        "eax": "39",
+        "ebx": "const char *pathname",
+        "ecx": "umode_t mode",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "rmdir",
+        "eax": "40",
+        "ebx": "const char *pathname",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "dup",
+        "eax": "41",
+        "ebx": "unsigned int fildes",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "pipe",
+        "eax": "42",
+        "ebx": "int *fildes",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "times",
+        "eax": "43",
+        "ebx": "struct tms *tbuf",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "prof",
+        "eax": "44",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "brk",
+        "eax": "45",
+        "ebx": "unsigned long brk",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setgid",
+        "eax": "46",
+        "ebx": "gid_t gid",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getgid",
+        "eax": "47",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "signal",
+        "eax": "48",
+        "ebx": "int sig",
+        "ecx": "__sighandler_t handler",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "geteuid",
+        "eax": "49",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getegid",
+        "eax": "50",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "acct",
+        "eax": "51",
+        "ebx": "const char *name",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "umount2",
+        "eax": "52",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "lock",
+        "eax": "53",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "ioctl",
+        "eax": "54",
+        "ebx": "unsigned int fd",
+        "ecx": "unsigned int cmd",
+        "edx": "unsigned long arg",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fcntl",
+        "eax": "55",
+        "ebx": "unsigned int fd",
+        "ecx": "unsigned int cmd",
+        "edx": "unsigned long arg",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mpx",
+        "eax": "56",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setpgid",
+        "eax": "57",
+        "ebx": "pid_t pid",
+        "ecx": "pid_t pgid",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ulimit",
+        "eax": "58",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "oldolduname",
+        "eax": "59",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "umask",
+        "eax": "60",
+        "ebx": "int mask",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "chroot",
+        "eax": "61",
+        "ebx": "const char *filename",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ustat",
+        "eax": "62",
+        "ebx": "unsigned dev",
+        "ecx": "struct ustat *ubuf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "dup2",
+        "eax": "63",
+        "ebx": "unsigned int oldfd",
+        "ecx": "unsigned int newfd",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getppid",
+        "eax": "64",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getpgrp",
+        "eax": "65",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setsid",
+        "eax": "66",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sigaction",
+        "eax": "67",
+        "ebx": "int",
+        "ecx": "const struct old_sigaction *",
+        "edx": "struct old_sigaction *",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sgetmask",
+        "eax": "68",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ssetmask",
+        "eax": "69",
+        "ebx": "int newmask",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setreuid",
+        "eax": "70",
+        "ebx": "uid_t ruid",
+        "ecx": "uid_t euid",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setregid",
+        "eax": "71",
+        "ebx": "gid_t rgid",
+        "ecx": "gid_t egid",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sigsuspend",
+        "eax": "72",
+        "ebx": "int unused1",
+        "ecx": "int unused2",
+        "edx": "old_sigset_t mask",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sigpending",
+        "eax": "73",
+        "ebx": "old_sigset_t *uset",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sethostname",
+        "eax": "74",
+        "ebx": "char *name",
+        "ecx": "int len",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setrlimit",
+        "eax": "75",
+        "ebx": "unsigned int resource",
+        "ecx": "struct rlimit *rlim",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getrlimit",
+        "eax": "76",
+        "ebx": "unsigned int resource",
+        "ecx": "struct rlimit *rlim",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getrusage",
+        "eax": "77",
+        "ebx": "int who",
+        "ecx": "struct rusage *ru",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "gettimeofday",
+        "eax": "78",
+        "ebx": "struct timeval *tv",
+        "ecx": "struct timezone *tz",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "settimeofday",
+        "eax": "79",
+        "ebx": "struct timeval *tv",
+        "ecx": "struct timezone *tz",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getgroups",
+        "eax": "80",
+        "ebx": "int gidsetsize",
+        "ecx": "gid_t *grouplist",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setgroups",
+        "eax": "81",
+        "ebx": "int gidsetsize",
+        "ecx": "gid_t *grouplist",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "select",
+        "eax": "82",
+        "ebx": "int n",
+        "ecx": "fd_set *inp",
+        "edx": "fd_set *outp",
+        "esi": "fd_set *exp",
+        "edi": "struct timeval *tvp",
+        "ebp": ""
+    },
+    {
+        "System call": "symlink",
+        "eax": "83",
+        "ebx": "const char *old",
+        "ecx": "const char *new",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "oldlstat",
+        "eax": "84",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "readlink",
+        "eax": "85",
+        "ebx": "const char *path",
+        "ecx": "char *buf",
+        "edx": "int bufsiz",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "uselib",
+        "eax": "86",
+        "ebx": "const char *library",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "swapon",
+        "eax": "87",
+        "ebx": "const char *specialfile",
+        "ecx": "int swap_flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "reboot",
+        "eax": "88",
+        "ebx": "int magic1",
+        "ecx": "int magic2",
+        "edx": "unsigned int cmd",
+        "esi": "void *arg",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "readdir",
+        "eax": "89",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "mmap",
+        "eax": "90",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "munmap",
+        "eax": "91",
+        "ebx": "unsigned long addr",
+        "ecx": "size_t len",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "truncate",
+        "eax": "92",
+        "ebx": "const char *path",
+        "ecx": "long length",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ftruncate",
+        "eax": "93",
+        "ebx": "unsigned int fd",
+        "ecx": "unsigned long length",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fchmod",
+        "eax": "94",
+        "ebx": "unsigned int fd",
+        "ecx": "umode_t mode",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fchown",
+        "eax": "95",
+        "ebx": "unsigned int fd",
+        "ecx": "uid_t user",
+        "edx": "gid_t group",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getpriority",
+        "eax": "96",
+        "ebx": "int which",
+        "ecx": "int who",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setpriority",
+        "eax": "97",
+        "ebx": "int which",
+        "ecx": "int who",
+        "edx": "int niceval",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "profil",
+        "eax": "98",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "statfs",
+        "eax": "99",
+        "ebx": "const char * path",
+        "ecx": "struct statfs *buf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fstatfs",
+        "eax": "100",
+        "ebx": "unsigned int fd",
+        "ecx": "struct statfs *buf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ioperm",
+        "eax": "101",
+        "ebx": "unsigned long from",
+        "ecx": "unsigned long num",
+        "edx": "int on",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "socketcall",
+        "eax": "102",
+        "ebx": "int call",
+        "ecx": "unsigned long *args",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "syslog",
+        "eax": "103",
+        "ebx": "int type",
+        "ecx": "char *buf",
+        "edx": "int len",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setitimer",
+        "eax": "104",
+        "ebx": "int which",
+        "ecx": "struct itimerval *value",
+        "edx": "struct itimerval *ovalue",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getitimer",
+        "eax": "105",
+        "ebx": "int which",
+        "ecx": "struct itimerval *value",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "stat",
+        "eax": "106",
+        "ebx": "const char *filename",
+        "ecx": "struct __old_kernel_stat *statbuf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "lstat",
+        "eax": "107",
+        "ebx": "const char *filename",
+        "ecx": "struct __old_kernel_stat *statbuf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fstat",
+        "eax": "108",
+        "ebx": "unsigned int fd",
+        "ecx": "struct __old_kernel_stat *statbuf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "olduname",
+        "eax": "109",
+        "ebx": "struct oldold_utsname *",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "iopl",
+        "eax": "110",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "vhangup",
+        "eax": "111",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "idle",
+        "eax": "112",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "vm86old",
+        "eax": "113",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "wait4",
+        "eax": "114",
+        "ebx": "pid_t pid",
+        "ecx": "int *stat_addr",
+        "edx": "int options",
+        "esi": "struct rusage *ru",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "swapoff",
+        "eax": "115",
+        "ebx": "const char *specialfile",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sysinfo",
+        "eax": "116",
+        "ebx": "struct sysinfo *info",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ipc",
+        "eax": "117",
+        "ebx": "unsigned int call",
+        "ecx": "int first",
+        "edx": "unsigned long second",
+        "esi": "unsigned long third",
+        "edi": "void *ptr",
+        "ebp": "long fifth"
+    },
+    {
+        "System call": "fsync",
+        "eax": "118",
+        "ebx": "unsigned int fd",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sigreturn",
+        "eax": "119",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "clone",
+        "eax": "120",
+        "ebx": "unsigned long",
+        "ecx": "unsigned long",
+        "edx": "int *",
+        "esi": "int *",
+        "edi": "unsigned long",
+        "ebp": ""
+    },
+    {
+        "System call": "setdomainname",
+        "eax": "121",
+        "ebx": "char *name",
+        "ecx": "int len",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "uname",
+        "eax": "122",
+        "ebx": "struct old_utsname *",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "modify_ldt",
+        "eax": "123",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "adjtimex",
+        "eax": "124",
+        "ebx": "struct __kernel_timex *txc_p",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mprotect",
+        "eax": "125",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "unsigned long prot",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sigprocmask",
+        "eax": "126",
+        "ebx": "int how",
+        "ecx": "old_sigset_t *set",
+        "edx": "old_sigset_t *oset",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "create_module",
+        "eax": "127",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "init_module",
+        "eax": "128",
+        "ebx": "void *umod",
+        "ecx": "unsigned long len",
+        "edx": "const char *uargs",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "delete_module",
+        "eax": "129",
+        "ebx": "const char *name_user",
+        "ecx": "unsigned int flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "get_kernel_syms",
+        "eax": "130",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "quotactl",
+        "eax": "131",
+        "ebx": "unsigned int cmd",
+        "ecx": "const char *special",
+        "edx": "qid_t id",
+        "esi": "void *addr",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getpgid",
+        "eax": "132",
+        "ebx": "pid_t pid",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fchdir",
+        "eax": "133",
+        "ebx": "unsigned int fd",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "bdflush",
+        "eax": "134",
+        "ebx": "int func",
+        "ecx": "long data",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sysfs",
+        "eax": "135",
+        "ebx": "int option",
+        "ecx": "unsigned long arg1",
+        "edx": "unsigned long arg2",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "personality",
+        "eax": "136",
+        "ebx": "unsigned int personality",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "afs_syscall",
+        "eax": "137",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setfsuid",
+        "eax": "138",
+        "ebx": "uid_t uid",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setfsgid",
+        "eax": "139",
+        "ebx": "gid_t gid",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "_llseek",
+        "eax": "140",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "getdents",
+        "eax": "141",
+        "ebx": "unsigned int fd",
+        "ecx": "struct linux_dirent *dirent",
+        "edx": "unsigned int count",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "_newselect",
+        "eax": "142",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "flock",
+        "eax": "143",
+        "ebx": "unsigned int fd",
+        "ecx": "unsigned int cmd",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "msync",
+        "eax": "144",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "int flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "readv",
+        "eax": "145",
+        "ebx": "unsigned long fd",
+        "ecx": "const struct iovec *vec",
+        "edx": "unsigned long vlen",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "writev",
+        "eax": "146",
+        "ebx": "unsigned long fd",
+        "ecx": "const struct iovec *vec",
+        "edx": "unsigned long vlen",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getsid",
+        "eax": "147",
+        "ebx": "pid_t pid",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fdatasync",
+        "eax": "148",
+        "ebx": "unsigned int fd",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "_sysctl",
+        "eax": "149",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "mlock",
+        "eax": "150",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "munlock",
+        "eax": "151",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mlockall",
+        "eax": "152",
+        "ebx": "int flags",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "munlockall",
+        "eax": "153",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_setparam",
+        "eax": "154",
+        "ebx": "pid_t pid",
+        "ecx": "struct sched_param *param",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_getparam",
+        "eax": "155",
+        "ebx": "pid_t pid",
+        "ecx": "struct sched_param *param",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_setscheduler",
+        "eax": "156",
+        "ebx": "pid_t pid",
+        "ecx": "int policy",
+        "edx": "struct sched_param *param",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_getscheduler",
+        "eax": "157",
+        "ebx": "pid_t pid",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_yield",
+        "eax": "158",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_get_priority_max",
+        "eax": "159",
+        "ebx": "int policy",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_get_priority_min",
+        "eax": "160",
+        "ebx": "int policy",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_rr_get_interval",
+        "eax": "161",
+        "ebx": "pid_t pid",
+        "ecx": "struct __kernel_timespec *interval",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "nanosleep",
+        "eax": "162",
+        "ebx": "struct __kernel_timespec *rqtp",
+        "ecx": "struct __kernel_timespec *rmtp",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mremap",
+        "eax": "163",
+        "ebx": "unsigned long addr",
+        "ecx": "unsigned long old_len",
+        "edx": "unsigned long new_len",
+        "esi": "unsigned long flags",
+        "edi": "unsigned long new_addr",
+        "ebp": ""
+    },
+    {
+        "System call": "setresuid",
+        "eax": "164",
+        "ebx": "uid_t ruid",
+        "ecx": "uid_t euid",
+        "edx": "uid_t suid",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getresuid",
+        "eax": "165",
+        "ebx": "uid_t *ruid",
+        "ecx": "uid_t *euid",
+        "edx": "uid_t *suid",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "vm86",
+        "eax": "166",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "query_module",
+        "eax": "167",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "poll",
+        "eax": "168",
+        "ebx": "struct pollfd *ufds",
+        "ecx": "unsigned int nfds",
+        "edx": "int timeout",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "nfsservctl",
+        "eax": "169",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setresgid",
+        "eax": "170",
+        "ebx": "gid_t rgid",
+        "ecx": "gid_t egid",
+        "edx": "gid_t sgid",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getresgid",
+        "eax": "171",
+        "ebx": "gid_t *rgid",
+        "ecx": "gid_t *egid",
+        "edx": "gid_t *sgid",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "prctl",
+        "eax": "172",
+        "ebx": "int option",
+        "ecx": "unsigned long arg2",
+        "edx": "unsigned long arg3",
+        "esi": "unsigned long arg4",
+        "edi": "unsigned long arg5",
+        "ebp": ""
+    },
+    {
+        "System call": "rt_sigreturn",
+        "eax": "173",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "rt_sigaction",
+        "eax": "174",
+        "ebx": "int",
+        "ecx": "const struct sigaction *",
+        "edx": "struct sigaction *",
+        "esi": "size_t",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "rt_sigprocmask",
+        "eax": "175",
+        "ebx": "int how",
+        "ecx": "sigset_t *set",
+        "edx": "sigset_t *oset",
+        "esi": "size_t sigsetsize",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "rt_sigpending",
+        "eax": "176",
+        "ebx": "sigset_t *set",
+        "ecx": "size_t sigsetsize",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "rt_sigtimedwait",
+        "eax": "177",
+        "ebx": "const sigset_t *uthese",
+        "ecx": "siginfo_t *uinfo",
+        "edx": "const struct __kernel_timespec *uts",
+        "esi": "size_t sigsetsize",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "rt_sigqueueinfo",
+        "eax": "178",
+        "ebx": "pid_t pid",
+        "ecx": "int sig",
+        "edx": "siginfo_t *uinfo",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "rt_sigsuspend",
+        "eax": "179",
+        "ebx": "sigset_t *unewset",
+        "ecx": "size_t sigsetsize",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "pread64",
+        "eax": "180",
+        "ebx": "unsigned int fd",
+        "ecx": "char *buf",
+        "edx": "size_t count",
+        "esi": "loff_t pos",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "pwrite64",
+        "eax": "181",
+        "ebx": "unsigned int fd",
+        "ecx": "const char *buf",
+        "edx": "size_t count",
+        "esi": "loff_t pos",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "chown",
+        "eax": "182",
+        "ebx": "const char *filename",
+        "ecx": "uid_t user",
+        "edx": "gid_t group",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getcwd",
+        "eax": "183",
+        "ebx": "char *buf",
+        "ecx": "unsigned long size",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "capget",
+        "eax": "184",
+        "ebx": "cap_user_header_t header",
+        "ecx": "cap_user_data_t dataptr",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "capset",
+        "eax": "185",
+        "ebx": "cap_user_header_t header",
+        "ecx": "const cap_user_data_t data",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sigaltstack",
+        "eax": "186",
+        "ebx": "const struct sigaltstack *uss",
+        "ecx": "struct sigaltstack *uoss",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sendfile",
+        "eax": "187",
+        "ebx": "int out_fd",
+        "ecx": "int in_fd",
+        "edx": "off_t *offset",
+        "esi": "size_t count",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getpmsg",
+        "eax": "188",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "putpmsg",
+        "eax": "189",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "vfork",
+        "eax": "190",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ugetrlimit",
+        "eax": "191",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "mmap2",
+        "eax": "192",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "truncate64",
+        "eax": "193",
+        "ebx": "const char *path",
+        "ecx": "loff_t length",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ftruncate64",
+        "eax": "194",
+        "ebx": "unsigned int fd",
+        "ecx": "loff_t length",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "stat64",
+        "eax": "195",
+        "ebx": "const char *filename",
+        "ecx": "struct stat64 *statbuf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "lstat64",
+        "eax": "196",
+        "ebx": "const char *filename",
+        "ecx": "struct stat64 *statbuf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fstat64",
+        "eax": "197",
+        "ebx": "unsigned long fd",
+        "ecx": "struct stat64 *statbuf",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "lchown32",
+        "eax": "198",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "getuid32",
+        "eax": "199",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "getgid32",
+        "eax": "200",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "geteuid32",
+        "eax": "201",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "getegid32",
+        "eax": "202",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setreuid32",
+        "eax": "203",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setregid32",
+        "eax": "204",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "getgroups32",
+        "eax": "205",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setgroups32",
+        "eax": "206",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "fchown32",
+        "eax": "207",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setresuid32",
+        "eax": "208",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "getresuid32",
+        "eax": "209",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setresgid32",
+        "eax": "210",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "getresgid32",
+        "eax": "211",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "chown32",
+        "eax": "212",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setuid32",
+        "eax": "213",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setgid32",
+        "eax": "214",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setfsuid32",
+        "eax": "215",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "setfsgid32",
+        "eax": "216",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "pivot_root",
+        "eax": "217",
+        "ebx": "const char *new_root",
+        "ecx": "const char *put_old",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mincore",
+        "eax": "218",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "unsigned char * vec",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "madvise",
+        "eax": "219",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "int behavior",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getdents64",
+        "eax": "220",
+        "ebx": "unsigned int fd",
+        "ecx": "struct linux_dirent64 *dirent",
+        "edx": "unsigned int count",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fcntl64",
+        "eax": "221",
+        "ebx": "unsigned int fd",
+        "ecx": "unsigned int cmd",
+        "edx": "unsigned long arg",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "not implemented",
+        "eax": "222",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "not implemented",
+        "eax": "223",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "gettid",
+        "eax": "224",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "readahead",
+        "eax": "225",
+        "ebx": "int fd",
+        "ecx": "loff_t offset",
+        "edx": "size_t count",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setxattr",
+        "eax": "226",
+        "ebx": "const char *path",
+        "ecx": "const char *name",
+        "edx": "const void *value",
+        "esi": "size_t size",
+        "edi": "int flags",
+        "ebp": ""
+    },
+    {
+        "System call": "lsetxattr",
+        "eax": "227",
+        "ebx": "const char *path",
+        "ecx": "const char *name",
+        "edx": "const void *value",
+        "esi": "size_t size",
+        "edi": "int flags",
+        "ebp": ""
+    },
+    {
+        "System call": "fsetxattr",
+        "eax": "228",
+        "ebx": "int fd",
+        "ecx": "const char *name",
+        "edx": "const void *value",
+        "esi": "size_t size",
+        "edi": "int flags",
+        "ebp": ""
+    },
+    {
+        "System call": "getxattr",
+        "eax": "229",
+        "ebx": "const char *path",
+        "ecx": "const char *name",
+        "edx": "void *value",
+        "esi": "size_t size",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "lgetxattr",
+        "eax": "230",
+        "ebx": "const char *path",
+        "ecx": "const char *name",
+        "edx": "void *value",
+        "esi": "size_t size",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fgetxattr",
+        "eax": "231",
+        "ebx": "int fd",
+        "ecx": "const char *name",
+        "edx": "void *value",
+        "esi": "size_t size",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "listxattr",
+        "eax": "232",
+        "ebx": "const char *path",
+        "ecx": "char *list",
+        "edx": "size_t size",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "llistxattr",
+        "eax": "233",
+        "ebx": "const char *path",
+        "ecx": "char *list",
+        "edx": "size_t size",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "flistxattr",
+        "eax": "234",
+        "ebx": "int fd",
+        "ecx": "char *list",
+        "edx": "size_t size",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "removexattr",
+        "eax": "235",
+        "ebx": "const char *path",
+        "ecx": "const char *name",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "lremovexattr",
+        "eax": "236",
+        "ebx": "const char *path",
+        "ecx": "const char *name",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fremovexattr",
+        "eax": "237",
+        "ebx": "int fd",
+        "ecx": "const char *name",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "tkill",
+        "eax": "238",
+        "ebx": "pid_t pid",
+        "ecx": "int sig",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sendfile64",
+        "eax": "239",
+        "ebx": "int out_fd",
+        "ecx": "int in_fd",
+        "edx": "loff_t *offset",
+        "esi": "size_t count",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "futex",
+        "eax": "240",
+        "ebx": "u32 *uaddr",
+        "ecx": "int op",
+        "edx": "u32 val",
+        "esi": "struct __kernel_timespec *utime",
+        "edi": "u32 *uaddr2",
+        "ebp": "u32 val3"
+    },
+    {
+        "System call": "sched_setaffinity",
+        "eax": "241",
+        "ebx": "pid_t pid",
+        "ecx": "unsigned int len",
+        "edx": "unsigned long *user_mask_ptr",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_getaffinity",
+        "eax": "242",
+        "ebx": "pid_t pid",
+        "ecx": "unsigned int len",
+        "edx": "unsigned long *user_mask_ptr",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "set_thread_area",
+        "eax": "243",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "get_thread_area",
+        "eax": "244",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "io_setup",
+        "eax": "245",
+        "ebx": "unsigned nr_reqs",
+        "ecx": "aio_context_t *ctx",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "io_destroy",
+        "eax": "246",
+        "ebx": "aio_context_t ctx",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "io_getevents",
+        "eax": "247",
+        "ebx": "aio_context_t ctx_id",
+        "ecx": "long min_nr",
+        "edx": "long nr",
+        "esi": "struct io_event *events",
+        "edi": "struct __kernel_timespec *timeout",
+        "ebp": ""
+    },
+    {
+        "System call": "io_submit",
+        "eax": "248",
+        "ebx": "aio_context_t",
+        "ecx": "long",
+        "edx": "struct iocb * *",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "io_cancel",
+        "eax": "249",
+        "ebx": "aio_context_t ctx_id",
+        "ecx": "struct iocb *iocb",
+        "edx": "struct io_event *result",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fadvise64",
+        "eax": "250",
+        "ebx": "int fd",
+        "ecx": "loff_t offset",
+        "edx": "size_t len",
+        "esi": "int advice",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "not implemented",
+        "eax": "251",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "exit_group",
+        "eax": "252",
+        "ebx": "int error_code",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "lookup_dcookie",
+        "eax": "253",
+        "ebx": "u64 cookie64",
+        "ecx": "char *buf",
+        "edx": "size_t len",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "epoll_create",
+        "eax": "254",
+        "ebx": "int size",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "epoll_ctl",
+        "eax": "255",
+        "ebx": "int epfd",
+        "ecx": "int op",
+        "edx": "int fd",
+        "esi": "struct epoll_event *event",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "epoll_wait",
+        "eax": "256",
+        "ebx": "int epfd",
+        "ecx": "struct epoll_event *events",
+        "edx": "int maxevents",
+        "esi": "int timeout",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "remap_file_pages",
+        "eax": "257",
+        "ebx": "unsigned long start",
+        "ecx": "unsigned long size",
+        "edx": "unsigned long prot",
+        "esi": "unsigned long pgoff",
+        "edi": "unsigned long flags",
+        "ebp": ""
+    },
+    {
+        "System call": "set_tid_address",
+        "eax": "258",
+        "ebx": "int *tidptr",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timer_create",
+        "eax": "259",
+        "ebx": "clockid_t which_clock",
+        "ecx": "struct sigevent *timer_event_spec",
+        "edx": "timer_t * created_timer_id",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timer_settime",
+        "eax": "260",
+        "ebx": "timer_t timer_id",
+        "ecx": "int flags",
+        "edx": "const struct __kernel_itimerspec *new_setting",
+        "esi": "struct __kernel_itimerspec *old_setting",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timer_gettime",
+        "eax": "261",
+        "ebx": "timer_t timer_id",
+        "ecx": "struct __kernel_itimerspec *setting",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timer_getoverrun",
+        "eax": "262",
+        "ebx": "timer_t timer_id",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timer_delete",
+        "eax": "263",
+        "ebx": "timer_t timer_id",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "clock_settime",
+        "eax": "264",
+        "ebx": "clockid_t which_clock",
+        "ecx": "const struct __kernel_timespec *tp",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "clock_gettime",
+        "eax": "265",
+        "ebx": "clockid_t which_clock",
+        "ecx": "struct __kernel_timespec *tp",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "clock_getres",
+        "eax": "266",
+        "ebx": "clockid_t which_clock",
+        "ecx": "struct __kernel_timespec *tp",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "clock_nanosleep",
+        "eax": "267",
+        "ebx": "clockid_t which_clock",
+        "ecx": "int flags",
+        "edx": "const struct __kernel_timespec *rqtp",
+        "esi": "struct __kernel_timespec *rmtp",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "statfs64",
+        "eax": "268",
+        "ebx": "const char *path",
+        "ecx": "size_t sz",
+        "edx": "struct statfs64 *buf",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fstatfs64",
+        "eax": "269",
+        "ebx": "unsigned int fd",
+        "ecx": "size_t sz",
+        "edx": "struct statfs64 *buf",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "tgkill",
+        "eax": "270",
+        "ebx": "pid_t tgid",
+        "ecx": "pid_t pid",
+        "edx": "int sig",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "utimes",
+        "eax": "271",
+        "ebx": "char *filename",
+        "ecx": "struct timeval *utimes",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fadvise64_64",
+        "eax": "272",
+        "ebx": "int fd",
+        "ecx": "loff_t offset",
+        "edx": "loff_t len",
+        "esi": "int advice",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "vserver",
+        "eax": "273",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    },
+    {
+        "System call": "mbind",
+        "eax": "274",
+        "ebx": "unsigned long start",
+        "ecx": "unsigned long len",
+        "edx": "unsigned long mode",
+        "esi": "const unsigned long *nmask",
+        "edi": "unsigned long maxnode",
+        "ebp": "unsigned flags"
+    },
+    {
+        "System call": "get_mempolicy",
+        "eax": "275",
+        "ebx": "int *policy",
+        "ecx": "unsigned long *nmask",
+        "edx": "unsigned long maxnode",
+        "esi": "unsigned long addr",
+        "edi": "unsigned long flags",
+        "ebp": ""
+    },
+    {
+        "System call": "set_mempolicy",
+        "eax": "276",
+        "ebx": "int mode",
+        "ecx": "const unsigned long *nmask",
+        "edx": "unsigned long maxnode",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mq_open",
+        "eax": "277",
+        "ebx": "const char *name",
+        "ecx": "int oflag",
+        "edx": "umode_t mode",
+        "esi": "struct mq_attr *attr",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mq_unlink",
+        "eax": "278",
+        "ebx": "const char *name",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mq_timedsend",
+        "eax": "279",
+        "ebx": "mqd_t mqdes",
+        "ecx": "const char *msg_ptr",
+        "edx": "size_t msg_len",
+        "esi": "unsigned int msg_prio",
+        "edi": "const struct __kernel_timespec *abs_timeout",
+        "ebp": ""
+    },
+    {
+        "System call": "mq_timedreceive",
+        "eax": "280",
+        "ebx": "mqd_t mqdes",
+        "ecx": "char *msg_ptr",
+        "edx": "size_t msg_len",
+        "esi": "unsigned int *msg_prio",
+        "edi": "const struct __kernel_timespec *abs_timeout",
+        "ebp": ""
+    },
+    {
+        "System call": "mq_notify",
+        "eax": "281",
+        "ebx": "mqd_t mqdes",
+        "ecx": "const struct sigevent *notification",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mq_getsetattr",
+        "eax": "282",
+        "ebx": "mqd_t mqdes",
+        "ecx": "const struct mq_attr *mqstat",
+        "edx": "struct mq_attr *omqstat",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "kexec_load",
+        "eax": "283",
+        "ebx": "unsigned long entry",
+        "ecx": "unsigned long nr_segments",
+        "edx": "struct kexec_segment *segments",
+        "esi": "unsigned long flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "waitid",
+        "eax": "284",
+        "ebx": "int which",
+        "ecx": "pid_t pid",
+        "edx": "struct siginfo *infop",
+        "esi": "int options",
+        "edi": "struct rusage *ru",
+        "ebp": ""
+    },
+    {
+        "System call": "not implemented",
+        "eax": "285",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "add_key",
+        "eax": "286",
+        "ebx": "const char *_type",
+        "ecx": "const char *_description",
+        "edx": "const void *_payload",
+        "esi": "size_t plen",
+        "edi": "key_serial_t destringid",
+        "ebp": ""
+    },
+    {
+        "System call": "request_key",
+        "eax": "287",
+        "ebx": "const char *_type",
+        "ecx": "const char *_description",
+        "edx": "const char *_callout_info",
+        "esi": "key_serial_t destringid",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "keyctl",
+        "eax": "288",
+        "ebx": "int cmd",
+        "ecx": "unsigned long arg2",
+        "edx": "unsigned long arg3",
+        "esi": "unsigned long arg4",
+        "edi": "unsigned long arg5",
+        "ebp": ""
+    },
+    {
+        "System call": "ioprio_set",
+        "eax": "289",
+        "ebx": "int which",
+        "ecx": "int who",
+        "edx": "int ioprio",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "ioprio_get",
+        "eax": "290",
+        "ebx": "int which",
+        "ecx": "int who",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "inotify_init",
+        "eax": "291",
+        "ebx": "",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "inotify_add_watch",
+        "eax": "292",
+        "ebx": "int fd",
+        "ecx": "const char *path",
+        "edx": "u32 mask",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "inotify_rm_watch",
+        "eax": "293",
+        "ebx": "int fd",
+        "ecx": "__s32 wd",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "migrate_pages",
+        "eax": "294",
+        "ebx": "pid_t pid",
+        "ecx": "unsigned long maxnode",
+        "edx": "const unsigned long *from",
+        "esi": "const unsigned long *to",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "openat",
+        "eax": "295",
+        "ebx": "int dfd",
+        "ecx": "const char *filename",
+        "edx": "int flags",
+        "esi": "umode_t mode",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mkdirat",
+        "eax": "296",
+        "ebx": "int dfd",
+        "ecx": "const char * pathname",
+        "edx": "umode_t mode",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mknodat",
+        "eax": "297",
+        "ebx": "int dfd",
+        "ecx": "const char * filename",
+        "edx": "umode_t mode",
+        "esi": "unsigned dev",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fchownat",
+        "eax": "298",
+        "ebx": "int dfd",
+        "ecx": "const char *filename",
+        "edx": "uid_t user",
+        "esi": "gid_t group",
+        "edi": "int flag",
+        "ebp": ""
+    },
+    {
+        "System call": "futimesat",
+        "eax": "299",
+        "ebx": "int dfd",
+        "ecx": "const char *filename",
+        "edx": "struct timeval *utimes",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fstatat64",
+        "eax": "300",
+        "ebx": "int dfd",
+        "ecx": "const char *filename",
+        "edx": "struct stat64 *statbuf",
+        "esi": "int flag",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "unlinkat",
+        "eax": "301",
+        "ebx": "int dfd",
+        "ecx": "const char * pathname",
+        "edx": "int flag",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "renameat",
+        "eax": "302",
+        "ebx": "int olddfd",
+        "ecx": "const char * oldname",
+        "edx": "int newdfd",
+        "esi": "const char * newname",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "linkat",
+        "eax": "303",
+        "ebx": "int olddfd",
+        "ecx": "const char *oldname",
+        "edx": "int newdfd",
+        "esi": "const char *newname",
+        "edi": "int flags",
+        "ebp": ""
+    },
+    {
+        "System call": "symlinkat",
+        "eax": "304",
+        "ebx": "const char * oldname",
+        "ecx": "int newdfd",
+        "edx": "const char * newname",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "readlinkat",
+        "eax": "305",
+        "ebx": "int dfd",
+        "ecx": "const char *path",
+        "edx": "char *buf",
+        "esi": "int bufsiz",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fchmodat",
+        "eax": "306",
+        "ebx": "int dfd",
+        "ecx": "const char * filename",
+        "edx": "umode_t mode",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "faccessat",
+        "eax": "307",
+        "ebx": "int dfd",
+        "ecx": "const char *filename",
+        "edx": "int mode",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "pselect6",
+        "eax": "308",
+        "ebx": "int",
+        "ecx": "fd_set *",
+        "edx": "fd_set *",
+        "esi": "fd_set *",
+        "edi": "struct __kernel_timespec *",
+        "ebp": "void *"
+    },
+    {
+        "System call": "ppoll",
+        "eax": "309",
+        "ebx": "struct pollfd *",
+        "ecx": "unsigned int",
+        "edx": "struct __kernel_timespec *",
+        "esi": "const sigset_t *",
+        "edi": "size_t",
+        "ebp": ""
+    },
+    {
+        "System call": "unshare",
+        "eax": "310",
+        "ebx": "unsigned long unshare_flags",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "set_robust_list",
+        "eax": "311",
+        "ebx": "struct robust_list_head *head",
+        "ecx": "size_t len",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "get_robust_list",
+        "eax": "312",
+        "ebx": "int pid",
+        "ecx": "struct robust_list_head * *head_ptr",
+        "edx": "size_t *len_ptr",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "splice",
+        "eax": "313",
+        "ebx": "int fd_in",
+        "ecx": "loff_t *off_in",
+        "edx": "int fd_out",
+        "esi": "loff_t *off_out",
+        "edi": "size_t len",
+        "ebp": "unsigned int flags"
+    },
+    {
+        "System call": "sync_file_range",
+        "eax": "314",
+        "ebx": "int fd",
+        "ecx": "loff_t offset",
+        "edx": "loff_t nbytes",
+        "esi": "unsigned int flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "tee",
+        "eax": "315",
+        "ebx": "int fdin",
+        "ecx": "int fdout",
+        "edx": "size_t len",
+        "esi": "unsigned int flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "vmsplice",
+        "eax": "316",
+        "ebx": "int fd",
+        "ecx": "const struct iovec *iov",
+        "edx": "unsigned long nr_segs",
+        "esi": "unsigned int flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "move_pages",
+        "eax": "317",
+        "ebx": "pid_t pid",
+        "ecx": "unsigned long nr_pages",
+        "edx": "const void * *pages",
+        "esi": "const int *nodes",
+        "edi": "int *status",
+        "ebp": "int flags"
+    },
+    {
+        "System call": "getcpu",
+        "eax": "318",
+        "ebx": "unsigned *cpu",
+        "ecx": "unsigned *node",
+        "edx": "struct getcpu_cache *cache",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "epoll_pwait",
+        "eax": "319",
+        "ebx": "int epfd",
+        "ecx": "struct epoll_event *events",
+        "edx": "int maxevents",
+        "esi": "int timeout",
+        "edi": "const sigset_t *sigmask",
+        "ebp": "size_t sigsetsize"
+    },
+    {
+        "System call": "utimensat",
+        "eax": "320",
+        "ebx": "int dfd",
+        "ecx": "const char *filename",
+        "edx": "struct __kernel_timespec *utimes",
+        "esi": "int flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "signalfd",
+        "eax": "321",
+        "ebx": "int ufd",
+        "ecx": "sigset_t *user_mask",
+        "edx": "size_t sizemask",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timerfd_create",
+        "eax": "322",
+        "ebx": "int clockid",
+        "ecx": "int flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "eventfd",
+        "eax": "323",
+        "ebx": "unsigned int count",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fallocate",
+        "eax": "324",
+        "ebx": "int fd",
+        "ecx": "int mode",
+        "edx": "loff_t offset",
+        "esi": "loff_t len",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timerfd_settime",
+        "eax": "325",
+        "ebx": "int ufd",
+        "ecx": "int flags",
+        "edx": "const struct __kernel_itimerspec *utmr",
+        "esi": "struct __kernel_itimerspec *otmr",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "timerfd_gettime",
+        "eax": "326",
+        "ebx": "int ufd",
+        "ecx": "struct __kernel_itimerspec *otmr",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "signalfd4",
+        "eax": "327",
+        "ebx": "int ufd",
+        "ecx": "sigset_t *user_mask",
+        "edx": "size_t sizemask",
+        "esi": "int flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "eventfd2",
+        "eax": "328",
+        "ebx": "unsigned int count",
+        "ecx": "int flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "epoll_create1",
+        "eax": "329",
+        "ebx": "int flags",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "dup3",
+        "eax": "330",
+        "ebx": "unsigned int oldfd",
+        "ecx": "unsigned int newfd",
+        "edx": "int flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "pipe2",
+        "eax": "331",
+        "ebx": "int *fildes",
+        "ecx": "int flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "inotify_init1",
+        "eax": "332",
+        "ebx": "int flags",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "preadv",
+        "eax": "333",
+        "ebx": "unsigned long fd",
+        "ecx": "const struct iovec *vec",
+        "edx": "unsigned long vlen",
+        "esi": "unsigned long pos_l",
+        "edi": "unsigned long pos_h",
+        "ebp": ""
+    },
+    {
+        "System call": "pwritev",
+        "eax": "334",
+        "ebx": "unsigned long fd",
+        "ecx": "const struct iovec *vec",
+        "edx": "unsigned long vlen",
+        "esi": "unsigned long pos_l",
+        "edi": "unsigned long pos_h",
+        "ebp": ""
+    },
+    {
+        "System call": "rt_tgsigqueueinfo",
+        "eax": "335",
+        "ebx": "pid_t tgid",
+        "ecx": "pid_t pid",
+        "edx": "int sig",
+        "esi": "siginfo_t *uinfo",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "perf_event_open",
+        "eax": "336",
+        "ebx": "struct perf_event_attr *attr_uptr",
+        "ecx": "pid_t pid",
+        "edx": "int cpu",
+        "esi": "int group_fd",
+        "edi": "unsigned long flags",
+        "ebp": ""
+    },
+    {
+        "System call": "recvmmsg",
+        "eax": "337",
+        "ebx": "int fd",
+        "ecx": "struct mmsghdr *msg",
+        "edx": "unsigned int vlen",
+        "esi": "unsigned flags",
+        "edi": "struct __kernel_timespec *timeout",
+        "ebp": ""
+    },
+    {
+        "System call": "fanotify_init",
+        "eax": "338",
+        "ebx": "unsigned int flags",
+        "ecx": "unsigned int event_f_flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "fanotify_mark",
+        "eax": "339",
+        "ebx": "int fanotify_fd",
+        "ecx": "unsigned int flags",
+        "edx": "u64 mask",
+        "esi": "int fd",
+        "edi": "const char *pathname",
+        "ebp": ""
+    },
+    {
+        "System call": "prlimit64",
+        "eax": "340",
+        "ebx": "pid_t pid",
+        "ecx": "unsigned int resource",
+        "edx": "const struct rlimit64 *new_rlim",
+        "esi": "struct rlimit64 *old_rlim",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "name_to_handle_at",
+        "eax": "341",
+        "ebx": "int dfd",
+        "ecx": "const char *name",
+        "edx": "struct file_handle *handle",
+        "esi": "int *mnt_id",
+        "edi": "int flag",
+        "ebp": ""
+    },
+    {
+        "System call": "open_by_handle_at",
+        "eax": "342",
+        "ebx": "int mountdirfd",
+        "ecx": "struct file_handle *handle",
+        "edx": "int flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "clock_adjtime",
+        "eax": "343",
+        "ebx": "clockid_t which_clock",
+        "ecx": "struct __kernel_timex *tx",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "syncfs",
+        "eax": "344",
+        "ebx": "int fd",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sendmmsg",
+        "eax": "345",
+        "ebx": "int fd",
+        "ecx": "struct mmsghdr *msg",
+        "edx": "unsigned int vlen",
+        "esi": "unsigned flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "setns",
+        "eax": "346",
+        "ebx": "int fd",
+        "ecx": "int nstype",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "process_vm_readv",
+        "eax": "347",
+        "ebx": "pid_t pid",
+        "ecx": "const struct iovec *lvec",
+        "edx": "unsigned long liovcnt",
+        "esi": "const struct iovec *rvec",
+        "edi": "unsigned long riovcnt",
+        "ebp": "unsigned long flags"
+    },
+    {
+        "System call": "process_vm_writev",
+        "eax": "348",
+        "ebx": "pid_t pid",
+        "ecx": "const struct iovec *lvec",
+        "edx": "unsigned long liovcnt",
+        "esi": "const struct iovec *rvec",
+        "edi": "unsigned long riovcnt",
+        "ebp": "unsigned long flags"
+    },
+    {
+        "System call": "kcmp",
+        "eax": "349",
+        "ebx": "pid_t pid1",
+        "ecx": "pid_t pid2",
+        "edx": "int type",
+        "esi": "unsigned long idx1",
+        "edi": "unsigned long idx2",
+        "ebp": ""
+    },
+    {
+        "System call": "finit_module",
+        "eax": "350",
+        "ebx": "int fd",
+        "ecx": "const char *uargs",
+        "edx": "int flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_setattr",
+        "eax": "351",
+        "ebx": "pid_t pid",
+        "ecx": "struct sched_attr *attr",
+        "edx": "unsigned int flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sched_getattr",
+        "eax": "352",
+        "ebx": "pid_t pid",
+        "ecx": "struct sched_attr *attr",
+        "edx": "unsigned int size",
+        "esi": "unsigned int flags",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "renameat2",
+        "eax": "353",
+        "ebx": "int olddfd",
+        "ecx": "const char *oldname",
+        "edx": "int newdfd",
+        "esi": "const char *newname",
+        "edi": "unsigned int flags",
+        "ebp": ""
+    },
+    {
+        "System call": "seccomp",
+        "eax": "354",
+        "ebx": "unsigned int op",
+        "ecx": "unsigned int flags",
+        "edx": "void *uargs",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getrandom",
+        "eax": "355",
+        "ebx": "char *buf",
+        "ecx": "size_t count",
+        "edx": "unsigned int flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "memfd_create",
+        "eax": "356",
+        "ebx": "const char *uname_ptr",
+        "ecx": "unsigned int flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "bpf",
+        "eax": "357",
+        "ebx": "int cmd",
+        "ecx": "union bpf_attr *attr",
+        "edx": "unsigned int size",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "execveat",
+        "eax": "358",
+        "ebx": "int dfd",
+        "ecx": "const char *filename",
+        "edx": "const char *const *argv",
+        "esi": "const char *const *envp",
+        "edi": "int flags",
+        "ebp": ""
+    },
+    {
+        "System call": "socket",
+        "eax": "359",
+        "ebx": "int",
+        "ecx": "int",
+        "edx": "int",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "socketpair",
+        "eax": "360",
+        "ebx": "int",
+        "ecx": "int",
+        "edx": "int",
+        "esi": "int *",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "bind",
+        "eax": "361",
+        "ebx": "int",
+        "ecx": "struct sockaddr *",
+        "edx": "int",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "connect",
+        "eax": "362",
+        "ebx": "int",
+        "ecx": "struct sockaddr *",
+        "edx": "int",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "listen",
+        "eax": "363",
+        "ebx": "int",
+        "ecx": "int",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "accept4",
+        "eax": "364",
+        "ebx": "int",
+        "ecx": "struct sockaddr *",
+        "edx": "int *",
+        "esi": "int",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getsockopt",
+        "eax": "365",
+        "ebx": "int fd",
+        "ecx": "int level",
+        "edx": "int optname",
+        "esi": "char *optval",
+        "edi": "int *optlen",
+        "ebp": ""
+    },
+    {
+        "System call": "setsockopt",
+        "eax": "366",
+        "ebx": "int fd",
+        "ecx": "int level",
+        "edx": "int optname",
+        "esi": "char *optval",
+        "edi": "int optlen",
+        "ebp": ""
+    },
+    {
+        "System call": "getsockname",
+        "eax": "367",
+        "ebx": "int",
+        "ecx": "struct sockaddr *",
+        "edx": "int *",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "getpeername",
+        "eax": "368",
+        "ebx": "int",
+        "ecx": "struct sockaddr *",
+        "edx": "int *",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "sendto",
+        "eax": "369",
+        "ebx": "int",
+        "ecx": "void *",
+        "edx": "size_t",
+        "esi": "unsigned",
+        "edi": "struct sockaddr *",
+        "ebp": "int"
+    },
+    {
+        "System call": "sendmsg",
+        "eax": "370",
+        "ebx": "int fd",
+        "ecx": "struct user_msghdr *msg",
+        "edx": "unsigned flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "recvfrom",
+        "eax": "371",
+        "ebx": "int",
+        "ecx": "void *",
+        "edx": "size_t",
+        "esi": "unsigned",
+        "edi": "struct sockaddr *",
+        "ebp": "int *"
+    },
+    {
+        "System call": "recvmsg",
+        "eax": "372",
+        "ebx": "int fd",
+        "ecx": "struct user_msghdr *msg",
+        "edx": "unsigned flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "shutdown",
+        "eax": "373",
+        "ebx": "int",
+        "ecx": "int",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "userfaultfd",
+        "eax": "374",
+        "ebx": "int flags",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "membarrier",
+        "eax": "375",
+        "ebx": "int cmd",
+        "ecx": "int flags",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "mlock2",
+        "eax": "376",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "int flags",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "copy_file_range",
+        "eax": "377",
+        "ebx": "int fd_in",
+        "ecx": "loff_t *off_in",
+        "edx": "int fd_out",
+        "esi": "loff_t *off_out",
+        "edi": "size_t len",
+        "ebp": "unsigned int flags"
+    },
+    {
+        "System call": "preadv2",
+        "eax": "378",
+        "ebx": "unsigned long fd",
+        "ecx": "const struct iovec *vec",
+        "edx": "unsigned long vlen",
+        "esi": "unsigned long pos_l",
+        "edi": "unsigned long pos_h",
+        "ebp": "rwf_t flags"
+    },
+    {
+        "System call": "pwritev2",
+        "eax": "379",
+        "ebx": "unsigned long fd",
+        "ecx": "const struct iovec *vec",
+        "edx": "unsigned long vlen",
+        "esi": "unsigned long pos_l",
+        "edi": "unsigned long pos_h",
+        "ebp": "rwf_t flags"
+    },
+    {
+        "System call": "pkey_mprotect",
+        "eax": "380",
+        "ebx": "unsigned long start",
+        "ecx": "size_t len",
+        "edx": "unsigned long prot",
+        "esi": "int pkey",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "pkey_alloc",
+        "eax": "381",
+        "ebx": "unsigned long flags",
+        "ecx": "unsigned long init_val",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "pkey_free",
+        "eax": "382",
+        "ebx": "int pkey",
+        "ecx": "",
+        "edx": "",
+        "esi": "",
+        "edi": "",
+        "ebp": ""
+    },
+    {
+        "System call": "statx",
+        "eax": "383",
+        "ebx": "int dfd",
+        "ecx": "const char *path",
+        "edx": "unsigned flags",
+        "esi": "unsigned mask",
+        "edi": "struct statx *buffer",
+        "ebp": ""
+    },
+    {
+        "System call": "arch_prctl",
+        "eax": "384",
+        "ebx": "?",
+        "ecx": "?",
+        "edx": "?",
+        "esi": "?",
+        "edi": "?",
+        "ebp": "?"
+    }
+]

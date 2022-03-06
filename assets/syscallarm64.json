@@ -1,0 +1,2922 @@
+[
+    {
+        "System call": "io_setup",
+        "x8": "0",
+        "x0": "unsigned nr_reqs",
+        "x1": "aio_context_t *ctx",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "io_destroy",
+        "x8": "1",
+        "x0": "aio_context_t ctx",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "io_submit",
+        "x8": "2",
+        "x0": "aio_context_t",
+        "x1": "long",
+        "x2": "struct iocb * *",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "io_cancel",
+        "x8": "3",
+        "x0": "aio_context_t ctx_id",
+        "x1": "struct iocb *iocb",
+        "x2": "struct io_event *result",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "io_getevents",
+        "x8": "4",
+        "x0": "aio_context_t ctx_id",
+        "x1": "long min_nr",
+        "x2": "long nr",
+        "x3": "struct io_event *events",
+        "x4": "struct __kernel_timespec *timeout",
+        "x5": ""
+    },
+    {
+        "System call": "setxattr",
+        "x8": "5",
+        "x0": "const char *path",
+        "x1": "const char *name",
+        "x2": "const void *value",
+        "x3": "size_t size",
+        "x4": "int flags",
+        "x5": ""
+    },
+    {
+        "System call": "lsetxattr",
+        "x8": "6",
+        "x0": "const char *path",
+        "x1": "const char *name",
+        "x2": "const void *value",
+        "x3": "size_t size",
+        "x4": "int flags",
+        "x5": ""
+    },
+    {
+        "System call": "fsetxattr",
+        "x8": "7",
+        "x0": "int fd",
+        "x1": "const char *name",
+        "x2": "const void *value",
+        "x3": "size_t size",
+        "x4": "int flags",
+        "x5": ""
+    },
+    {
+        "System call": "getxattr",
+        "x8": "8",
+        "x0": "const char *path",
+        "x1": "const char *name",
+        "x2": "void *value",
+        "x3": "size_t size",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "lgetxattr",
+        "x8": "9",
+        "x0": "const char *path",
+        "x1": "const char *name",
+        "x2": "void *value",
+        "x3": "size_t size",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fgetxattr",
+        "x8": "10",
+        "x0": "int fd",
+        "x1": "const char *name",
+        "x2": "void *value",
+        "x3": "size_t size",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "listxattr",
+        "x8": "11",
+        "x0": "const char *path",
+        "x1": "char *list",
+        "x2": "size_t size",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "llistxattr",
+        "x8": "12",
+        "x0": "const char *path",
+        "x1": "char *list",
+        "x2": "size_t size",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "flistxattr",
+        "x8": "13",
+        "x0": "int fd",
+        "x1": "char *list",
+        "x2": "size_t size",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "removexattr",
+        "x8": "14",
+        "x0": "const char *path",
+        "x1": "const char *name",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "lremovexattr",
+        "x8": "15",
+        "x0": "const char *path",
+        "x1": "const char *name",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fremovexattr",
+        "x8": "16",
+        "x0": "int fd",
+        "x1": "const char *name",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getcwd",
+        "x8": "17",
+        "x0": "char *buf",
+        "x1": "unsigned long size",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "lookup_dcookie",
+        "x8": "18",
+        "x0": "u64 cookie64",
+        "x1": "char *buf",
+        "x2": "size_t len",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "eventfd2",
+        "x8": "19",
+        "x0": "unsigned int count",
+        "x1": "int flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "epoll_create1",
+        "x8": "20",
+        "x0": "int flags",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "epoll_ctl",
+        "x8": "21",
+        "x0": "int epfd",
+        "x1": "int op",
+        "x2": "int fd",
+        "x3": "struct epoll_event *event",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "epoll_pwait",
+        "x8": "22",
+        "x0": "int epfd",
+        "x1": "struct epoll_event *events",
+        "x2": "int maxevents",
+        "x3": "int timeout",
+        "x4": "const sigset_t *sigmask",
+        "x5": "size_t sigsetsize"
+    },
+    {
+        "System call": "dup",
+        "x8": "23",
+        "x0": "unsigned int fildes",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "dup3",
+        "x8": "24",
+        "x0": "unsigned int oldfd",
+        "x1": "unsigned int newfd",
+        "x2": "int flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fcntl",
+        "x8": "25",
+        "x0": "unsigned int fd",
+        "x1": "unsigned int cmd",
+        "x2": "unsigned long arg",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "inotify_init1",
+        "x8": "26",
+        "x0": "int flags",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "inotify_add_watch",
+        "x8": "27",
+        "x0": "int fd",
+        "x1": "const char *path",
+        "x2": "u32 mask",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "inotify_rm_watch",
+        "x8": "28",
+        "x0": "int fd",
+        "x1": "__s32 wd",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "ioctl",
+        "x8": "29",
+        "x0": "unsigned int fd",
+        "x1": "unsigned int cmd",
+        "x2": "unsigned long arg",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "ioprio_set",
+        "x8": "30",
+        "x0": "int which",
+        "x1": "int who",
+        "x2": "int ioprio",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "ioprio_get",
+        "x8": "31",
+        "x0": "int which",
+        "x1": "int who",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "flock",
+        "x8": "32",
+        "x0": "unsigned int fd",
+        "x1": "unsigned int cmd",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mknodat",
+        "x8": "33",
+        "x0": "int dfd",
+        "x1": "const char * filename",
+        "x2": "umode_t mode",
+        "x3": "unsigned dev",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mkdirat",
+        "x8": "34",
+        "x0": "int dfd",
+        "x1": "const char * pathname",
+        "x2": "umode_t mode",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "unlinkat",
+        "x8": "35",
+        "x0": "int dfd",
+        "x1": "const char * pathname",
+        "x2": "int flag",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "symlinkat",
+        "x8": "36",
+        "x0": "const char * oldname",
+        "x1": "int newdfd",
+        "x2": "const char * newname",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "linkat",
+        "x8": "37",
+        "x0": "int olddfd",
+        "x1": "const char *oldname",
+        "x2": "int newdfd",
+        "x3": "const char *newname",
+        "x4": "int flags",
+        "x5": ""
+    },
+    {
+        "System call": "renameat",
+        "x8": "38",
+        "x0": "int olddfd",
+        "x1": "const char * oldname",
+        "x2": "int newdfd",
+        "x3": "const char * newname",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "umount2",
+        "x8": "39",
+        "x0": "?",
+        "x1": "?",
+        "x2": "?",
+        "x3": "?",
+        "x4": "?",
+        "x5": "?"
+    },
+    {
+        "System call": "mount",
+        "x8": "40",
+        "x0": "char *dev_name",
+        "x1": "char *dir_name",
+        "x2": "char *type",
+        "x3": "unsigned long flags",
+        "x4": "void *data",
+        "x5": ""
+    },
+    {
+        "System call": "pivot_root",
+        "x8": "41",
+        "x0": "const char *new_root",
+        "x1": "const char *put_old",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "nfsservctl",
+        "x8": "42",
+        "x0": "?",
+        "x1": "?",
+        "x2": "?",
+        "x3": "?",
+        "x4": "?",
+        "x5": "?"
+    },
+    {
+        "System call": "statfs",
+        "x8": "43",
+        "x0": "const char * path",
+        "x1": "struct statfs *buf",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fstatfs",
+        "x8": "44",
+        "x0": "unsigned int fd",
+        "x1": "struct statfs *buf",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "truncate",
+        "x8": "45",
+        "x0": "const char *path",
+        "x1": "long length",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "ftruncate",
+        "x8": "46",
+        "x0": "unsigned int fd",
+        "x1": "unsigned long length",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fallocate",
+        "x8": "47",
+        "x0": "int fd",
+        "x1": "int mode",
+        "x2": "loff_t offset",
+        "x3": "loff_t len",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "faccessat",
+        "x8": "48",
+        "x0": "int dfd",
+        "x1": "const char *filename",
+        "x2": "int mode",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "chdir",
+        "x8": "49",
+        "x0": "const char *filename",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fchdir",
+        "x8": "50",
+        "x0": "unsigned int fd",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "chroot",
+        "x8": "51",
+        "x0": "const char *filename",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fchmod",
+        "x8": "52",
+        "x0": "unsigned int fd",
+        "x1": "umode_t mode",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fchmodat",
+        "x8": "53",
+        "x0": "int dfd",
+        "x1": "const char * filename",
+        "x2": "umode_t mode",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fchownat",
+        "x8": "54",
+        "x0": "int dfd",
+        "x1": "const char *filename",
+        "x2": "uid_t user",
+        "x3": "gid_t group",
+        "x4": "int flag",
+        "x5": ""
+    },
+    {
+        "System call": "fchown",
+        "x8": "55",
+        "x0": "unsigned int fd",
+        "x1": "uid_t user",
+        "x2": "gid_t group",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "openat",
+        "x8": "56",
+        "x0": "int dfd",
+        "x1": "const char *filename",
+        "x2": "int flags",
+        "x3": "umode_t mode",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "close",
+        "x8": "57",
+        "x0": "unsigned int fd",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "vhangup",
+        "x8": "58",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "pipe2",
+        "x8": "59",
+        "x0": "int *fildes",
+        "x1": "int flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "quotactl",
+        "x8": "60",
+        "x0": "unsigned int cmd",
+        "x1": "const char *special",
+        "x2": "qid_t id",
+        "x3": "void *addr",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getdents64",
+        "x8": "61",
+        "x0": "unsigned int fd",
+        "x1": "struct linux_dirent64 *dirent",
+        "x2": "unsigned int count",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "lseek",
+        "x8": "62",
+        "x0": "unsigned int fd",
+        "x1": "off_t offset",
+        "x2": "unsigned int whence",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "read",
+        "x8": "63",
+        "x0": "unsigned int fd",
+        "x1": "char *buf",
+        "x2": "size_t count",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "write",
+        "x8": "64",
+        "x0": "unsigned int fd",
+        "x1": "const char *buf",
+        "x2": "size_t count",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "readv",
+        "x8": "65",
+        "x0": "unsigned long fd",
+        "x1": "const struct iovec *vec",
+        "x2": "unsigned long vlen",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "writev",
+        "x8": "66",
+        "x0": "unsigned long fd",
+        "x1": "const struct iovec *vec",
+        "x2": "unsigned long vlen",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "pread64",
+        "x8": "67",
+        "x0": "unsigned int fd",
+        "x1": "char *buf",
+        "x2": "size_t count",
+        "x3": "loff_t pos",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "pwrite64",
+        "x8": "68",
+        "x0": "unsigned int fd",
+        "x1": "const char *buf",
+        "x2": "size_t count",
+        "x3": "loff_t pos",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "preadv",
+        "x8": "69",
+        "x0": "unsigned long fd",
+        "x1": "const struct iovec *vec",
+        "x2": "unsigned long vlen",
+        "x3": "unsigned long pos_l",
+        "x4": "unsigned long pos_h",
+        "x5": ""
+    },
+    {
+        "System call": "pwritev",
+        "x8": "70",
+        "x0": "unsigned long fd",
+        "x1": "const struct iovec *vec",
+        "x2": "unsigned long vlen",
+        "x3": "unsigned long pos_l",
+        "x4": "unsigned long pos_h",
+        "x5": ""
+    },
+    {
+        "System call": "sendfile",
+        "x8": "71",
+        "x0": "int out_fd",
+        "x1": "int in_fd",
+        "x2": "off_t *offset",
+        "x3": "size_t count",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "pselect6",
+        "x8": "72",
+        "x0": "int",
+        "x1": "fd_set *",
+        "x2": "fd_set *",
+        "x3": "fd_set *",
+        "x4": "struct __kernel_timespec *",
+        "x5": "void *"
+    },
+    {
+        "System call": "ppoll",
+        "x8": "73",
+        "x0": "struct pollfd *",
+        "x1": "unsigned int",
+        "x2": "struct __kernel_timespec *",
+        "x3": "const sigset_t *",
+        "x4": "size_t",
+        "x5": ""
+    },
+    {
+        "System call": "signalfd4",
+        "x8": "74",
+        "x0": "int ufd",
+        "x1": "sigset_t *user_mask",
+        "x2": "size_t sizemask",
+        "x3": "int flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "vmsplice",
+        "x8": "75",
+        "x0": "int fd",
+        "x1": "const struct iovec *iov",
+        "x2": "unsigned long nr_segs",
+        "x3": "unsigned int flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "splice",
+        "x8": "76",
+        "x0": "int fd_in",
+        "x1": "loff_t *off_in",
+        "x2": "int fd_out",
+        "x3": "loff_t *off_out",
+        "x4": "size_t len",
+        "x5": "unsigned int flags"
+    },
+    {
+        "System call": "tee",
+        "x8": "77",
+        "x0": "int fdin",
+        "x1": "int fdout",
+        "x2": "size_t len",
+        "x3": "unsigned int flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "readlinkat",
+        "x8": "78",
+        "x0": "int dfd",
+        "x1": "const char *path",
+        "x2": "char *buf",
+        "x3": "int bufsiz",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "newfstatat",
+        "x8": "79",
+        "x0": "int dfd",
+        "x1": "const char *filename",
+        "x2": "struct stat *statbuf",
+        "x3": "int flag",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fstat",
+        "x8": "80",
+        "x0": "unsigned int fd",
+        "x1": "struct __old_kernel_stat *statbuf",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sync",
+        "x8": "81",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fsync",
+        "x8": "82",
+        "x0": "unsigned int fd",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fdatasync",
+        "x8": "83",
+        "x0": "unsigned int fd",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sync_file_range",
+        "x8": "84",
+        "x0": "int fd",
+        "x1": "loff_t offset",
+        "x2": "loff_t nbytes",
+        "x3": "unsigned int flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timerfd_create",
+        "x8": "85",
+        "x0": "int clockid",
+        "x1": "int flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timerfd_settime",
+        "x8": "86",
+        "x0": "int ufd",
+        "x1": "int flags",
+        "x2": "const struct __kernel_itimerspec *utmr",
+        "x3": "struct __kernel_itimerspec *otmr",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timerfd_gettime",
+        "x8": "87",
+        "x0": "int ufd",
+        "x1": "struct __kernel_itimerspec *otmr",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "utimensat",
+        "x8": "88",
+        "x0": "int dfd",
+        "x1": "const char *filename",
+        "x2": "struct __kernel_timespec *utimes",
+        "x3": "int flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "acct",
+        "x8": "89",
+        "x0": "const char *name",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "capget",
+        "x8": "90",
+        "x0": "cap_user_header_t header",
+        "x1": "cap_user_data_t dataptr",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "capset",
+        "x8": "91",
+        "x0": "cap_user_header_t header",
+        "x1": "const cap_user_data_t data",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "personality",
+        "x8": "92",
+        "x0": "unsigned int personality",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "exit",
+        "x8": "93",
+        "x0": "int error_code",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "exit_group",
+        "x8": "94",
+        "x0": "int error_code",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "waitid",
+        "x8": "95",
+        "x0": "int which",
+        "x1": "pid_t pid",
+        "x2": "struct siginfo *infop",
+        "x3": "int options",
+        "x4": "struct rusage *ru",
+        "x5": ""
+    },
+    {
+        "System call": "set_tid_address",
+        "x8": "96",
+        "x0": "int *tidptr",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "unshare",
+        "x8": "97",
+        "x0": "unsigned long unshare_flags",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "futex",
+        "x8": "98",
+        "x0": "u32 *uaddr",
+        "x1": "int op",
+        "x2": "u32 val",
+        "x3": "struct __kernel_timespec *utime",
+        "x4": "u32 *uaddr2",
+        "x5": "u32 val3"
+    },
+    {
+        "System call": "set_robust_list",
+        "x8": "99",
+        "x0": "struct robust_list_head *head",
+        "x1": "size_t len",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "get_robust_list",
+        "x8": "100",
+        "x0": "int pid",
+        "x1": "struct robust_list_head * *head_ptr",
+        "x2": "size_t *len_ptr",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "nanosleep",
+        "x8": "101",
+        "x0": "struct __kernel_timespec *rqtp",
+        "x1": "struct __kernel_timespec *rmtp",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getitimer",
+        "x8": "102",
+        "x0": "int which",
+        "x1": "struct itimerval *value",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setitimer",
+        "x8": "103",
+        "x0": "int which",
+        "x1": "struct itimerval *value",
+        "x2": "struct itimerval *ovalue",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "kexec_load",
+        "x8": "104",
+        "x0": "unsigned long entry",
+        "x1": "unsigned long nr_segments",
+        "x2": "struct kexec_segment *segments",
+        "x3": "unsigned long flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "init_module",
+        "x8": "105",
+        "x0": "void *umod",
+        "x1": "unsigned long len",
+        "x2": "const char *uargs",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "delete_module",
+        "x8": "106",
+        "x0": "const char *name_user",
+        "x1": "unsigned int flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timer_create",
+        "x8": "107",
+        "x0": "clockid_t which_clock",
+        "x1": "struct sigevent *timer_event_spec",
+        "x2": "timer_t * created_timer_id",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timer_gettime",
+        "x8": "108",
+        "x0": "timer_t timer_id",
+        "x1": "struct __kernel_itimerspec *setting",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timer_getoverrun",
+        "x8": "109",
+        "x0": "timer_t timer_id",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timer_settime",
+        "x8": "110",
+        "x0": "timer_t timer_id",
+        "x1": "int flags",
+        "x2": "const struct __kernel_itimerspec *new_setting",
+        "x3": "struct __kernel_itimerspec *old_setting",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "timer_delete",
+        "x8": "111",
+        "x0": "timer_t timer_id",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "clock_settime",
+        "x8": "112",
+        "x0": "clockid_t which_clock",
+        "x1": "const struct __kernel_timespec *tp",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "clock_gettime",
+        "x8": "113",
+        "x0": "clockid_t which_clock",
+        "x1": "struct __kernel_timespec *tp",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "clock_getres",
+        "x8": "114",
+        "x0": "clockid_t which_clock",
+        "x1": "struct __kernel_timespec *tp",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "clock_nanosleep",
+        "x8": "115",
+        "x0": "clockid_t which_clock",
+        "x1": "int flags",
+        "x2": "const struct __kernel_timespec *rqtp",
+        "x3": "struct __kernel_timespec *rmtp",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "syslog",
+        "x8": "116",
+        "x0": "int type",
+        "x1": "char *buf",
+        "x2": "int len",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "ptrace",
+        "x8": "117",
+        "x0": "long request",
+        "x1": "long pid",
+        "x2": "unsigned long addr",
+        "x3": "unsigned long data",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_setparam",
+        "x8": "118",
+        "x0": "pid_t pid",
+        "x1": "struct sched_param *param",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_setscheduler",
+        "x8": "119",
+        "x0": "pid_t pid",
+        "x1": "int policy",
+        "x2": "struct sched_param *param",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_getscheduler",
+        "x8": "120",
+        "x0": "pid_t pid",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_getparam",
+        "x8": "121",
+        "x0": "pid_t pid",
+        "x1": "struct sched_param *param",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_setaffinity",
+        "x8": "122",
+        "x0": "pid_t pid",
+        "x1": "unsigned int len",
+        "x2": "unsigned long *user_mask_ptr",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_getaffinity",
+        "x8": "123",
+        "x0": "pid_t pid",
+        "x1": "unsigned int len",
+        "x2": "unsigned long *user_mask_ptr",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_yield",
+        "x8": "124",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_get_priority_max",
+        "x8": "125",
+        "x0": "int policy",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_get_priority_min",
+        "x8": "126",
+        "x0": "int policy",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_rr_get_interval",
+        "x8": "127",
+        "x0": "pid_t pid",
+        "x1": "struct __kernel_timespec *interval",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "restart_syscall",
+        "x8": "128",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "kill",
+        "x8": "129",
+        "x0": "pid_t pid",
+        "x1": "int sig",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "tkill",
+        "x8": "130",
+        "x0": "pid_t pid",
+        "x1": "int sig",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "tgkill",
+        "x8": "131",
+        "x0": "pid_t tgid",
+        "x1": "pid_t pid",
+        "x2": "int sig",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sigaltstack",
+        "x8": "132",
+        "x0": "const struct sigaltstack *uss",
+        "x1": "struct sigaltstack *uoss",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "rt_sigsuspend",
+        "x8": "133",
+        "x0": "sigset_t *unewset",
+        "x1": "size_t sigsetsize",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "rt_sigaction",
+        "x8": "134",
+        "x0": "int",
+        "x1": "const struct sigaction *",
+        "x2": "struct sigaction *",
+        "x3": "size_t",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "rt_sigprocmask",
+        "x8": "135",
+        "x0": "int how",
+        "x1": "sigset_t *set",
+        "x2": "sigset_t *oset",
+        "x3": "size_t sigsetsize",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "rt_sigpending",
+        "x8": "136",
+        "x0": "sigset_t *set",
+        "x1": "size_t sigsetsize",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "rt_sigtimedwait",
+        "x8": "137",
+        "x0": "const sigset_t *uthese",
+        "x1": "siginfo_t *uinfo",
+        "x2": "const struct __kernel_timespec *uts",
+        "x3": "size_t sigsetsize",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "rt_sigqueueinfo",
+        "x8": "138",
+        "x0": "pid_t pid",
+        "x1": "int sig",
+        "x2": "siginfo_t *uinfo",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "rt_sigreturn",
+        "x8": "139",
+        "x0": "?",
+        "x1": "?",
+        "x2": "?",
+        "x3": "?",
+        "x4": "?",
+        "x5": "?"
+    },
+    {
+        "System call": "setpriority",
+        "x8": "140",
+        "x0": "int which",
+        "x1": "int who",
+        "x2": "int niceval",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getpriority",
+        "x8": "141",
+        "x0": "int which",
+        "x1": "int who",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "reboot",
+        "x8": "142",
+        "x0": "int magic1",
+        "x1": "int magic2",
+        "x2": "unsigned int cmd",
+        "x3": "void *arg",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setregid",
+        "x8": "143",
+        "x0": "gid_t rgid",
+        "x1": "gid_t egid",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setgid",
+        "x8": "144",
+        "x0": "gid_t gid",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setreuid",
+        "x8": "145",
+        "x0": "uid_t ruid",
+        "x1": "uid_t euid",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setuid",
+        "x8": "146",
+        "x0": "uid_t uid",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setresuid",
+        "x8": "147",
+        "x0": "uid_t ruid",
+        "x1": "uid_t euid",
+        "x2": "uid_t suid",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getresuid",
+        "x8": "148",
+        "x0": "uid_t *ruid",
+        "x1": "uid_t *euid",
+        "x2": "uid_t *suid",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setresgid",
+        "x8": "149",
+        "x0": "gid_t rgid",
+        "x1": "gid_t egid",
+        "x2": "gid_t sgid",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getresgid",
+        "x8": "150",
+        "x0": "gid_t *rgid",
+        "x1": "gid_t *egid",
+        "x2": "gid_t *sgid",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setfsuid",
+        "x8": "151",
+        "x0": "uid_t uid",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setfsgid",
+        "x8": "152",
+        "x0": "gid_t gid",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "times",
+        "x8": "153",
+        "x0": "struct tms *tbuf",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setpgid",
+        "x8": "154",
+        "x0": "pid_t pid",
+        "x1": "pid_t pgid",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getpgid",
+        "x8": "155",
+        "x0": "pid_t pid",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getsid",
+        "x8": "156",
+        "x0": "pid_t pid",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setsid",
+        "x8": "157",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getgroups",
+        "x8": "158",
+        "x0": "int gidsetsize",
+        "x1": "gid_t *grouplist",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setgroups",
+        "x8": "159",
+        "x0": "int gidsetsize",
+        "x1": "gid_t *grouplist",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "uname",
+        "x8": "160",
+        "x0": "struct old_utsname *",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sethostname",
+        "x8": "161",
+        "x0": "char *name",
+        "x1": "int len",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setdomainname",
+        "x8": "162",
+        "x0": "char *name",
+        "x1": "int len",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getrlimit",
+        "x8": "163",
+        "x0": "unsigned int resource",
+        "x1": "struct rlimit *rlim",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setrlimit",
+        "x8": "164",
+        "x0": "unsigned int resource",
+        "x1": "struct rlimit *rlim",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getrusage",
+        "x8": "165",
+        "x0": "int who",
+        "x1": "struct rusage *ru",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "umask",
+        "x8": "166",
+        "x0": "int mask",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "prctl",
+        "x8": "167",
+        "x0": "int option",
+        "x1": "unsigned long arg2",
+        "x2": "unsigned long arg3",
+        "x3": "unsigned long arg4",
+        "x4": "unsigned long arg5",
+        "x5": ""
+    },
+    {
+        "System call": "getcpu",
+        "x8": "168",
+        "x0": "unsigned *cpu",
+        "x1": "unsigned *node",
+        "x2": "struct getcpu_cache *cache",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "gettimeofday",
+        "x8": "169",
+        "x0": "struct timeval *tv",
+        "x1": "struct timezone *tz",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "settimeofday",
+        "x8": "170",
+        "x0": "struct timeval *tv",
+        "x1": "struct timezone *tz",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "adjtimex",
+        "x8": "171",
+        "x0": "struct __kernel_timex *txc_p",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getpid",
+        "x8": "172",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getppid",
+        "x8": "173",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getuid",
+        "x8": "174",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "geteuid",
+        "x8": "175",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getgid",
+        "x8": "176",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getegid",
+        "x8": "177",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "gettid",
+        "x8": "178",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sysinfo",
+        "x8": "179",
+        "x0": "struct sysinfo *info",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mq_open",
+        "x8": "180",
+        "x0": "const char *name",
+        "x1": "int oflag",
+        "x2": "umode_t mode",
+        "x3": "struct mq_attr *attr",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mq_unlink",
+        "x8": "181",
+        "x0": "const char *name",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mq_timedsend",
+        "x8": "182",
+        "x0": "mqd_t mqdes",
+        "x1": "const char *msg_ptr",
+        "x2": "size_t msg_len",
+        "x3": "unsigned int msg_prio",
+        "x4": "const struct __kernel_timespec *abs_timeout",
+        "x5": ""
+    },
+    {
+        "System call": "mq_timedreceive",
+        "x8": "183",
+        "x0": "mqd_t mqdes",
+        "x1": "char *msg_ptr",
+        "x2": "size_t msg_len",
+        "x3": "unsigned int *msg_prio",
+        "x4": "const struct __kernel_timespec *abs_timeout",
+        "x5": ""
+    },
+    {
+        "System call": "mq_notify",
+        "x8": "184",
+        "x0": "mqd_t mqdes",
+        "x1": "const struct sigevent *notification",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mq_getsetattr",
+        "x8": "185",
+        "x0": "mqd_t mqdes",
+        "x1": "const struct mq_attr *mqstat",
+        "x2": "struct mq_attr *omqstat",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "msgget",
+        "x8": "186",
+        "x0": "key_t key",
+        "x1": "int msgflg",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "msgctl",
+        "x8": "187",
+        "x0": "int msqid",
+        "x1": "int cmd",
+        "x2": "struct msqid_ds *buf",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "msgrcv",
+        "x8": "188",
+        "x0": "int msqid",
+        "x1": "struct msgbuf *msgp",
+        "x2": "size_t msgsz",
+        "x3": "long msgtyp",
+        "x4": "int msgflg",
+        "x5": ""
+    },
+    {
+        "System call": "msgsnd",
+        "x8": "189",
+        "x0": "int msqid",
+        "x1": "struct msgbuf *msgp",
+        "x2": "size_t msgsz",
+        "x3": "int msgflg",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "semget",
+        "x8": "190",
+        "x0": "key_t key",
+        "x1": "int nsems",
+        "x2": "int semflg",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "semctl",
+        "x8": "191",
+        "x0": "int semid",
+        "x1": "int semnum",
+        "x2": "int cmd",
+        "x3": "unsigned long arg",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "semtimedop",
+        "x8": "192",
+        "x0": "int semid",
+        "x1": "struct sembuf *sops",
+        "x2": "unsigned nsops",
+        "x3": "const struct __kernel_timespec *timeout",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "semop",
+        "x8": "193",
+        "x0": "int semid",
+        "x1": "struct sembuf *sops",
+        "x2": "unsigned nsops",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "shmget",
+        "x8": "194",
+        "x0": "key_t key",
+        "x1": "size_t size",
+        "x2": "int flag",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "shmctl",
+        "x8": "195",
+        "x0": "int shmid",
+        "x1": "int cmd",
+        "x2": "struct shmid_ds *buf",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "shmat",
+        "x8": "196",
+        "x0": "int shmid",
+        "x1": "char *shmaddr",
+        "x2": "int shmflg",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "shmdt",
+        "x8": "197",
+        "x0": "char *shmaddr",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "socket",
+        "x8": "198",
+        "x0": "int",
+        "x1": "int",
+        "x2": "int",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "socketpair",
+        "x8": "199",
+        "x0": "int",
+        "x1": "int",
+        "x2": "int",
+        "x3": "int *",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "bind",
+        "x8": "200",
+        "x0": "int",
+        "x1": "struct sockaddr *",
+        "x2": "int",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "listen",
+        "x8": "201",
+        "x0": "int",
+        "x1": "int",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "accept",
+        "x8": "202",
+        "x0": "int",
+        "x1": "struct sockaddr *",
+        "x2": "int *",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "connect",
+        "x8": "203",
+        "x0": "int",
+        "x1": "struct sockaddr *",
+        "x2": "int",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getsockname",
+        "x8": "204",
+        "x0": "int",
+        "x1": "struct sockaddr *",
+        "x2": "int *",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getpeername",
+        "x8": "205",
+        "x0": "int",
+        "x1": "struct sockaddr *",
+        "x2": "int *",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sendto",
+        "x8": "206",
+        "x0": "int",
+        "x1": "void *",
+        "x2": "size_t",
+        "x3": "unsigned",
+        "x4": "struct sockaddr *",
+        "x5": "int"
+    },
+    {
+        "System call": "recvfrom",
+        "x8": "207",
+        "x0": "int",
+        "x1": "void *",
+        "x2": "size_t",
+        "x3": "unsigned",
+        "x4": "struct sockaddr *",
+        "x5": "int *"
+    },
+    {
+        "System call": "setsockopt",
+        "x8": "208",
+        "x0": "int fd",
+        "x1": "int level",
+        "x2": "int optname",
+        "x3": "char *optval",
+        "x4": "int optlen",
+        "x5": ""
+    },
+    {
+        "System call": "getsockopt",
+        "x8": "209",
+        "x0": "int fd",
+        "x1": "int level",
+        "x2": "int optname",
+        "x3": "char *optval",
+        "x4": "int *optlen",
+        "x5": ""
+    },
+    {
+        "System call": "shutdown",
+        "x8": "210",
+        "x0": "int",
+        "x1": "int",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sendmsg",
+        "x8": "211",
+        "x0": "int fd",
+        "x1": "struct user_msghdr *msg",
+        "x2": "unsigned flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "recvmsg",
+        "x8": "212",
+        "x0": "int fd",
+        "x1": "struct user_msghdr *msg",
+        "x2": "unsigned flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "readahead",
+        "x8": "213",
+        "x0": "int fd",
+        "x1": "loff_t offset",
+        "x2": "size_t count",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "brk",
+        "x8": "214",
+        "x0": "unsigned long brk",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "munmap",
+        "x8": "215",
+        "x0": "unsigned long addr",
+        "x1": "size_t len",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mremap",
+        "x8": "216",
+        "x0": "unsigned long addr",
+        "x1": "unsigned long old_len",
+        "x2": "unsigned long new_len",
+        "x3": "unsigned long flags",
+        "x4": "unsigned long new_addr",
+        "x5": ""
+    },
+    {
+        "System call": "add_key",
+        "x8": "217",
+        "x0": "const char *_type",
+        "x1": "const char *_description",
+        "x2": "const void *_payload",
+        "x3": "size_t plen",
+        "x4": "key_serial_t destringid",
+        "x5": ""
+    },
+    {
+        "System call": "request_key",
+        "x8": "218",
+        "x0": "const char *_type",
+        "x1": "const char *_description",
+        "x2": "const char *_callout_info",
+        "x3": "key_serial_t destringid",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "keyctl",
+        "x8": "219",
+        "x0": "int cmd",
+        "x1": "unsigned long arg2",
+        "x2": "unsigned long arg3",
+        "x3": "unsigned long arg4",
+        "x4": "unsigned long arg5",
+        "x5": ""
+    },
+    {
+        "System call": "clone",
+        "x8": "220",
+        "x0": "unsigned long",
+        "x1": "unsigned long",
+        "x2": "int *",
+        "x3": "int *",
+        "x4": "unsigned long",
+        "x5": ""
+    },
+    {
+        "System call": "execve",
+        "x8": "221",
+        "x0": "const char *filename",
+        "x1": "const char *const *argv",
+        "x2": "const char *const *envp",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mmap",
+        "x8": "222",
+        "x0": "?",
+        "x1": "?",
+        "x2": "?",
+        "x3": "?",
+        "x4": "?",
+        "x5": "?"
+    },
+    {
+        "System call": "fadvise64",
+        "x8": "223",
+        "x0": "int fd",
+        "x1": "loff_t offset",
+        "x2": "size_t len",
+        "x3": "int advice",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "swapon",
+        "x8": "224",
+        "x0": "const char *specialfile",
+        "x1": "int swap_flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "swapoff",
+        "x8": "225",
+        "x0": "const char *specialfile",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mprotect",
+        "x8": "226",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "unsigned long prot",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "msync",
+        "x8": "227",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "int flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mlock",
+        "x8": "228",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "munlock",
+        "x8": "229",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mlockall",
+        "x8": "230",
+        "x0": "int flags",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "munlockall",
+        "x8": "231",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mincore",
+        "x8": "232",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "unsigned char * vec",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "madvise",
+        "x8": "233",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "int behavior",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "remap_file_pages",
+        "x8": "234",
+        "x0": "unsigned long start",
+        "x1": "unsigned long size",
+        "x2": "unsigned long prot",
+        "x3": "unsigned long pgoff",
+        "x4": "unsigned long flags",
+        "x5": ""
+    },
+    {
+        "System call": "mbind",
+        "x8": "235",
+        "x0": "unsigned long start",
+        "x1": "unsigned long len",
+        "x2": "unsigned long mode",
+        "x3": "const unsigned long *nmask",
+        "x4": "unsigned long maxnode",
+        "x5": "unsigned flags"
+    },
+    {
+        "System call": "get_mempolicy",
+        "x8": "236",
+        "x0": "int *policy",
+        "x1": "unsigned long *nmask",
+        "x2": "unsigned long maxnode",
+        "x3": "unsigned long addr",
+        "x4": "unsigned long flags",
+        "x5": ""
+    },
+    {
+        "System call": "set_mempolicy",
+        "x8": "237",
+        "x0": "int mode",
+        "x1": "const unsigned long *nmask",
+        "x2": "unsigned long maxnode",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "migrate_pages",
+        "x8": "238",
+        "x0": "pid_t pid",
+        "x1": "unsigned long maxnode",
+        "x2": "const unsigned long *from",
+        "x3": "const unsigned long *to",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "move_pages",
+        "x8": "239",
+        "x0": "pid_t pid",
+        "x1": "unsigned long nr_pages",
+        "x2": "const void * *pages",
+        "x3": "const int *nodes",
+        "x4": "int *status",
+        "x5": "int flags"
+    },
+    {
+        "System call": "rt_tgsigqueueinfo",
+        "x8": "240",
+        "x0": "pid_t tgid",
+        "x1": "pid_t pid",
+        "x2": "int sig",
+        "x3": "siginfo_t *uinfo",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "perf_event_open",
+        "x8": "241",
+        "x0": "struct perf_event_attr *attr_uptr",
+        "x1": "pid_t pid",
+        "x2": "int cpu",
+        "x3": "int group_fd",
+        "x4": "unsigned long flags",
+        "x5": ""
+    },
+    {
+        "System call": "accept4",
+        "x8": "242",
+        "x0": "int",
+        "x1": "struct sockaddr *",
+        "x2": "int *",
+        "x3": "int",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "recvmmsg",
+        "x8": "243",
+        "x0": "int fd",
+        "x1": "struct mmsghdr *msg",
+        "x2": "unsigned int vlen",
+        "x3": "unsigned flags",
+        "x4": "struct __kernel_timespec *timeout",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "244",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "245",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "246",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "247",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "248",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "249",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "250",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "251",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "252",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "253",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "254",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "255",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "256",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "257",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "258",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "not implemented",
+        "x8": "259",
+        "x0": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "wait4",
+        "x8": "260",
+        "x0": "pid_t pid",
+        "x1": "int *stat_addr",
+        "x2": "int options",
+        "x3": "struct rusage *ru",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "prlimit64",
+        "x8": "261",
+        "x0": "pid_t pid",
+        "x1": "unsigned int resource",
+        "x2": "const struct rlimit64 *new_rlim",
+        "x3": "struct rlimit64 *old_rlim",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fanotify_init",
+        "x8": "262",
+        "x0": "unsigned int flags",
+        "x1": "unsigned int event_f_flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "fanotify_mark",
+        "x8": "263",
+        "x0": "int fanotify_fd",
+        "x1": "unsigned int flags",
+        "x2": "u64 mask",
+        "x3": "int fd",
+        "x4": "const char *pathname",
+        "x5": ""
+    },
+    {
+        "System call": "name_to_handle_at",
+        "x8": "264",
+        "x0": "int dfd",
+        "x1": "const char *name",
+        "x2": "struct file_handle *handle",
+        "x3": "int *mnt_id",
+        "x4": "int flag",
+        "x5": ""
+    },
+    {
+        "System call": "open_by_handle_at",
+        "x8": "265",
+        "x0": "int mountdirfd",
+        "x1": "struct file_handle *handle",
+        "x2": "int flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "clock_adjtime",
+        "x8": "266",
+        "x0": "clockid_t which_clock",
+        "x1": "struct __kernel_timex *tx",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "syncfs",
+        "x8": "267",
+        "x0": "int fd",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "setns",
+        "x8": "268",
+        "x0": "int fd",
+        "x1": "int nstype",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sendmmsg",
+        "x8": "269",
+        "x0": "int fd",
+        "x1": "struct mmsghdr *msg",
+        "x2": "unsigned int vlen",
+        "x3": "unsigned flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "process_vm_readv",
+        "x8": "270",
+        "x0": "pid_t pid",
+        "x1": "const struct iovec *lvec",
+        "x2": "unsigned long liovcnt",
+        "x3": "const struct iovec *rvec",
+        "x4": "unsigned long riovcnt",
+        "x5": "unsigned long flags"
+    },
+    {
+        "System call": "process_vm_writev",
+        "x8": "271",
+        "x0": "pid_t pid",
+        "x1": "const struct iovec *lvec",
+        "x2": "unsigned long liovcnt",
+        "x3": "const struct iovec *rvec",
+        "x4": "unsigned long riovcnt",
+        "x5": "unsigned long flags"
+    },
+    {
+        "System call": "kcmp",
+        "x8": "272",
+        "x0": "pid_t pid1",
+        "x1": "pid_t pid2",
+        "x2": "int type",
+        "x3": "unsigned long idx1",
+        "x4": "unsigned long idx2",
+        "x5": ""
+    },
+    {
+        "System call": "finit_module",
+        "x8": "273",
+        "x0": "int fd",
+        "x1": "const char *uargs",
+        "x2": "int flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_setattr",
+        "x8": "274",
+        "x0": "pid_t pid",
+        "x1": "struct sched_attr *attr",
+        "x2": "unsigned int flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "sched_getattr",
+        "x8": "275",
+        "x0": "pid_t pid",
+        "x1": "struct sched_attr *attr",
+        "x2": "unsigned int size",
+        "x3": "unsigned int flags",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "renameat2",
+        "x8": "276",
+        "x0": "int olddfd",
+        "x1": "const char *oldname",
+        "x2": "int newdfd",
+        "x3": "const char *newname",
+        "x4": "unsigned int flags",
+        "x5": ""
+    },
+    {
+        "System call": "seccomp",
+        "x8": "277",
+        "x0": "unsigned int op",
+        "x1": "unsigned int flags",
+        "x2": "void *uargs",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "getrandom",
+        "x8": "278",
+        "x0": "char *buf",
+        "x1": "size_t count",
+        "x2": "unsigned int flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "memfd_create",
+        "x8": "279",
+        "x0": "const char *uname_ptr",
+        "x1": "unsigned int flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "bpf",
+        "x8": "280",
+        "x0": "int cmd",
+        "x1": "union bpf_attr *attr",
+        "x2": "unsigned int size",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "execveat",
+        "x8": "281",
+        "x0": "int dfd",
+        "x1": "const char *filename",
+        "x2": "const char *const *argv",
+        "x3": "const char *const *envp",
+        "x4": "int flags",
+        "x5": ""
+    },
+    {
+        "System call": "userfaultfd",
+        "x8": "282",
+        "x0": "int flags",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "membarrier",
+        "x8": "283",
+        "x0": "int cmd",
+        "x1": "int flags",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "mlock2",
+        "x8": "284",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "int flags",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "copy_file_range",
+        "x8": "285",
+        "x0": "int fd_in",
+        "x1": "loff_t *off_in",
+        "x2": "int fd_out",
+        "x3": "loff_t *off_out",
+        "x4": "size_t len",
+        "x5": "unsigned int flags"
+    },
+    {
+        "System call": "preadv2",
+        "x8": "286",
+        "x0": "unsigned long fd",
+        "x1": "const struct iovec *vec",
+        "x2": "unsigned long vlen",
+        "x3": "unsigned long pos_l",
+        "x4": "unsigned long pos_h",
+        "x5": "rwf_t flags"
+    },
+    {
+        "System call": "pwritev2",
+        "x8": "287",
+        "x0": "unsigned long fd",
+        "x1": "const struct iovec *vec",
+        "x2": "unsigned long vlen",
+        "x3": "unsigned long pos_l",
+        "x4": "unsigned long pos_h",
+        "x5": "rwf_t flags"
+    },
+    {
+        "System call": "pkey_mprotect",
+        "x8": "288",
+        "x0": "unsigned long start",
+        "x1": "size_t len",
+        "x2": "unsigned long prot",
+        "x3": "int pkey",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "pkey_alloc",
+        "x8": "289",
+        "x0": "unsigned long flags",
+        "x1": "unsigned long init_val",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "pkey_free",
+        "x8": "290",
+        "x0": "int pkey",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "x4": "",
+        "x5": ""
+    },
+    {
+        "System call": "statx",
+        "x8": "291",
+        "x0": "int dfd",
+        "x1": "const char *path",
+        "x2": "unsigned flags",
+        "x3": "unsigned mask",
+        "x4": "struct statx *buffer",
+        "x5": ""
+    }
+]
