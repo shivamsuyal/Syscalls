@@ -33,6 +33,7 @@ body {
   border-radius: 1rem;
   border-width: 0;
   padding: 0.2rem;
+  padding-left: 0.5rem;
   font-size: 0.8rem;
 }
 
@@ -208,10 +209,12 @@ body {
   overflow-wrap: break-word;
   text-align: center;
   padding: 1rem 0;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
 }
 
 #syscalls .call p:hover {
-  border: 0;
+  border-color: #013a63;
   background-color: #013a63;
   border-radius: 0.2rem;
   color: var(--boxColor2_dark);

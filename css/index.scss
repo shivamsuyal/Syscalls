@@ -33,6 +33,7 @@ body{
     border-radius: 1rem;
     border-width: 0;
     padding: 0.2rem;
+    padding-left: 0.5rem;
     font-size: 0.8rem;
 }
 #search{
@@ -47,14 +48,6 @@ body{
     #searchsvgs{
         position: relative;
         margin-left: 0.5rem;
-        // &:hover{
-        //     #crossIcon{
-        //         z-index: 100;
-        //     }
-        //     #searchIcon{
-        //         z-index: 90;
-        //     }
-        // }
     }
     #searchIcon,#crossIcon{
         background-color:hsla(0, 0%, 93%,1);
@@ -198,10 +191,12 @@ body{
             // background-color: #ffc300;
             text-align: center;
             padding: 1rem 0;
+            transition: all 150ms;
             &:hover{
                 // background-color: var(--boxColor2_dark);
                 // border-color: var(--boxColor2_dark);
-                border: 0;
+                // border: 0;
+                border-color: #013a63;
                 background-color: #013a63;
                 border-radius: 0.2rem;
                 color: var(--boxColor2_dark);
