@@ -159,9 +159,36 @@ searchText.onblur = ()=>{
     }
 }
 TextFocus = 0
-document.addEventListener("keypress", function(event) {
-    if (event.keyCode == 113) {
-        searchText.focus()
+document.addEventListener("keydown", function(event) {
+    if (event.key == "Escape") {
+        if(TextFocus == 1){
+            searchText.blur()
+            searchText.style.opacity="0"
+            TextFocus=0
+        }else{
+            searchText.focus()
+            TextFocus = 1
+        }
     }
-    // console.log(event.keyCode)
+    // if (event.key == "Escape") {
+    //     searchText.blur()
+    //     searchText.value=""
+    // }
+    // console.log(event)
   });
+
+// document.onkeydown = function(evt) {
+//     evt = evt || window.event;
+//     var isEscape = false;
+//     if ("key" in evt) {
+//         isEscape = (evt.key === "Escape" || evt.key === "Esc");
+//     } else {
+//         isEscape = (evt.keyCode === 27);
+//     }
+//     if (isEscape) {
+//         alert("Escape");
+//     }
+// };
+// document.addEventListener(KeyboardEvent,(e)=>{
+//     console.log(e)
+// })
